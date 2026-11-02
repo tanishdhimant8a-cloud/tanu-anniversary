@@ -1,0 +1,308 @@
+/* ==========================================================================
+   Tanuu — A Year of Us
+   Romantic Luxury Editorial Styling & Keyframes
+   ========================================================================== */
+
+/* Google Fonts Imports & Fallbacks */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=DM+Sans:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+/* Base Root Settings */
+:root {
+  --color-surface: #1a1116;
+  --color-surface-dim: #1a1116;
+  --color-surface-bright: #41363c;
+  --color-surface-container-lowest: #140c11;
+  --color-surface-container-low: #22191e;
+  --color-surface-container: #261d22;
+  --color-surface-container-high: #31272d;
+  --color-surface-container-highest: #3d3238;
+  --color-on-surface: #f0dee6;
+  --color-on-surface-variant: #dcc0c2;
+  --color-primary: #ffb2bc;
+  --color-on-primary: #650324;
+  --color-primary-container: #8d263f;
+  --color-on-primary-container: #ffa5b2;
+  --color-secondary: #dbc2a9;
+  --color-on-secondary: #3d2e1c;
+  --color-secondary-container: #554430;
+  --color-on-secondary-container: #c9b198;
+  --color-tertiary: #f2b7c0;
+  --color-gold: #e8cfb5;
+  --color-wine-dark: #10080d;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbars but keep functionality */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #140c11;
+}
+::-webkit-scrollbar-thumb {
+  background: #564244;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8d263f;
+}
+
+/* Film Grain Texture Overlay */
+.film-grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Glassmorphic Panels */
+.glass-panel {
+  background: rgba(38, 29, 34, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(216, 160, 168, 0.12);
+  box-shadow: 0 16px 40px -15px rgba(0, 0, 0, 0.6);
+}
+
+.glass-panel-elevated {
+  background: rgba(49, 39, 45, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(232, 207, 181, 0.2);
+  box-shadow: 0 20px 50px -10px rgba(141, 38, 63, 0.35);
+}
+
+/* Candlelight & Ambient Glow */
+.glow-primary {
+  box-shadow: 0 0 35px rgba(141, 38, 63, 0.45);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 30px rgba(219, 194, 169, 0.3);
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(255, 178, 188, 0.5);
+}
+
+.glow-gold-text {
+  text-shadow: 0 0 15px rgba(232, 207, 181, 0.4);
+}
+
+/* Ambient Candle Flicker */
+@keyframes candleFlicker {
+  0%, 100% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.95;
+    transform: scale(1.02);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(0.98);
+  }
+  75% {
+    opacity: 0.9;
+    transform: scale(1.01);
+  }
+}
+
+.candle-glow {
+  animation: candleFlicker 4s infinite ease-in-out;
+}
+
+/* Vinyl Record Spin */
+@keyframes spinVinyl {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-vinyl {
+  animation: spinVinyl 12s linear infinite;
+}
+
+.spin-vinyl.paused {
+  animation-play-state: paused !important;
+}
+
+/* Equalizer Bars Animation */
+@keyframes eqBounce {
+  0%, 100% {
+    height: 4px;
+  }
+  50% {
+    height: 100%;
+  }
+}
+
+.eq-bar {
+  animation: eqBounce 1.2s infinite ease-in-out;
+}
+
+.eq-bar.paused {
+  animation-play-state: paused !important;
+}
+
+/* Active Little Things Card */
+.active-card {
+  border-color: rgba(255, 178, 188, 0.6) !important;
+  background-color: rgba(49, 39, 45, 0.95) !important;
+  box-shadow: 0 15px 40px -10px rgba(141, 38, 63, 0.6), inset 0 0 20px rgba(141, 38, 63, 0.2) !important;
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* Heart Particle Burst */
+@keyframes heartFloatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(0.8) rotate(0deg);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateY(-80px) scale(1.2) rotate(15deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-160px) scale(1.5) rotate(-15deg);
+  }
+}
+
+.floating-heart {
+  animation: heartFloatUp 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* Floating Ambient Petals */
+@keyframes driftPetal {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(80px, 100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Custom Inscription & Quote Border */
+.quote-mark {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 5rem;
+  line-height: 1;
+  color: rgba(255, 178, 188, 0.2);
+}
+
+/* Wax Seal Texture & Hover */
+.wax-seal {
+  background: radial-gradient(circle at 35% 35%, #a43850, #650324 70%, #380214 100%);
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(141, 38, 63, 0.6),
+    inset 0 2px 4px rgba(255, 178, 188, 0.4),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.wax-seal:hover {
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.8),
+    0 0 30px rgba(255, 178, 188, 0.6),
+    inset 0 2px 5px rgba(255, 178, 188, 0.6);
+}
+
+/* Polaroid Card Style */
+.polaroid-card {
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.7), 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.polaroid-card:hover {
+  transform: translateY(-6px) rotate(-0.5deg);
+  box-shadow: 0 25px 45px -10px rgba(141, 38, 63, 0.4), 0 0 25px rgba(219, 194, 169, 0.2);
+}
+
+/* Feature 2: Ken Burns Cinematic Reel Animations */
+@keyframes kenBurnsIn {
+  0% {
+    transform: scale(1.0) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.12) translate(-1%, -1.5%);
+  }
+}
+
+@keyframes kenBurnsOut {
+  0% {
+    transform: scale(1.12) translate(1%, 1.5%);
+  }
+  100% {
+    transform: scale(1.0) translate(0, 0);
+  }
+}
+
+.ken-burns-in {
+  animation: kenBurnsIn 4.2s ease-out forwards;
+}
+
+.ken-burns-out {
+  animation: kenBurnsOut 4.2s ease-out forwards;
+}
+
+/* Feature 1: Heart-Shaped Voice Player Button */
+.heart-button {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.heart-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 178, 188, 0.8);
+}
+
+.heart-button:active {
+  transform: scale(0.95);
+}
+
+/* Print Styling for Keepsake Folio */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #1a1116 !important;
+  }
+  header, footer, #ambient-canvas, .no-print, button {
+    display: none !important;
+  }
+  #love-letter, #grand-hero, #forever {
+    page-break-after: always;
+    background: #fff !important;
+    color: #000 !important;
+  }
+}

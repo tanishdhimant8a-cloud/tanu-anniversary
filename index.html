@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Tanuu — A Year of Us | First Anniversary Retrospective</title>
+  <meta name="description" content="A romantic first-anniversary luxury editorial website created with devoted love by Tanish for Tanuu. 365 days of us." />
+  <meta name="theme-color" content="#1a1116" />
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=DM+Sans:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant": "#3d3238",
+            "on-error-container": "#ffdad6",
+            "background": "#1a1116",
+            "tertiary-fixed": "#ffd9de",
+            "on-tertiary-fixed": "#321118",
+            "surface": "#1a1116",
+            "inverse-primary": "#a43850",
+            "on-tertiary": "#4b252c",
+            "on-secondary-container": "#c9b198",
+            "primary": "#ffb2bc",
+            "on-tertiary-fixed-variant": "#653b42",
+            "on-surface-variant": "#dcc0c2",
+            "surface-bright": "#41363c",
+            "inverse-surface": "#f0dee6",
+            "surface-container-high": "#31272d",
+            "surface-dim": "#1a1116",
+            "secondary-fixed": "#f8dec4",
+            "on-secondary-fixed-variant": "#554430",
+            "error-container": "#93000a",
+            "surface-container": "#261d22",
+            "on-secondary": "#3d2e1c",
+            "primary-container": "#8d263f",
+            "surface-container-lowest": "#140c11",
+            "primary-fixed": "#ffd9dd",
+            "on-secondary-fixed": "#261909",
+            "outline": "#a48a8d",
+            "primary-fixed-dim": "#ffb2bc",
+            "on-primary-fixed-variant": "#851f39",
+            "on-primary-container": "#ffa5b2",
+            "secondary-fixed-dim": "#dbc2a9",
+            "inverse-on-surface": "#382d33",
+            "surface-container-highest": "#3d3238",
+            "on-tertiary-container": "#e9afb8",
+            "surface-container-low": "#22191e",
+            "secondary-container": "#554430",
+            "error": "#ffb4ab",
+            "tertiary": "#f2b7c0",
+            "on-primary-fixed": "#400013",
+            "on-background": "#f0dee6",
+            "on-error": "#690005",
+            "secondary": "#dbc2a9",
+            "surface-tint": "#ffb2bc",
+            "on-primary": "#650324",
+            "outline-variant": "#564244",
+            "on-surface": "#f0dee6",
+            "tertiary-container": "#6c4148",
+            "tertiary-fixed-dim": "#f2b7c0"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "space-lg": "2.25rem",
+            "margin-mobile": "1.25rem",
+            "margin": "3rem",
+            "space-md": "1.25rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.75rem",
+            "space-xs": "0.375rem",
+            "space-xl": "3.75rem",
+            "gutter-mobile": "1rem"
+          },
+          fontFamily: {
+            "headline-lg-mobile": ["Bodoni Moda", "serif"],
+            "label-md": ["DM Sans", "sans-serif"],
+            "body-sm": ["DM Sans", "sans-serif"],
+            "display-hero": ["Bodoni Moda", "serif"],
+            "body-md": ["DM Sans", "sans-serif"],
+            "label-caps": ["DM Sans", "sans-serif"],
+            "headline-md": ["Bodoni Moda", "serif"],
+            "headline-lg": ["Bodoni Moda", "serif"],
+            "title-script": ["Playfair Display", "serif"],
+            "body-lg": ["DM Sans", "sans-serif"],
+            "display-hero-mobile": ["Bodoni Moda", "serif"],
+            "headline-sm": ["Bodoni Moda", "serif"]
+          },
+          fontSize: {
+            "headline-lg-mobile": ["2rem", { lineHeight: "2.5rem", letterSpacing: "0em", fontWeight: "400" }],
+            "label-md": ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "0.02em", fontWeight: "500" }],
+            "body-sm": ["0.8125rem", { lineHeight: "1.35rem", letterSpacing: "0.015em", fontWeight: "400" }],
+            "display-hero": ["4.5rem", { lineHeight: "5rem", letterSpacing: "-0.02em", fontWeight: "400" }],
+            "body-md": ["0.9375rem", { lineHeight: "1.6rem", letterSpacing: "0.01em", fontWeight: "400" }],
+            "label-caps": ["0.6875rem", { lineHeight: "1rem", letterSpacing: "0.2em", fontWeight: "600" }],
+            "headline-md": ["2rem", { lineHeight: "2.5rem", letterSpacing: "0em", fontWeight: "500" }],
+            "headline-lg": ["3rem", { lineHeight: "3.5rem", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "title-script": ["1.75rem", { lineHeight: "2.25rem", letterSpacing: "0.02em", fontWeight: "400" }],
+            "body-lg": ["1.125rem", { lineHeight: "1.875rem", letterSpacing: "0.01em", fontWeight: "300" }],
+            "display-hero-mobile": ["2.75rem", { lineHeight: "3.25rem", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "headline-sm": ["1.5rem", { lineHeight: "2rem", letterSpacing: "0.01em", fontWeight: "500" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container relative">
+
+  <!-- Subtle Film Grain Overlay -->
+  <div class="film-grain"></div>
+
+  <!-- Background Ambient Glow & Particles Canvas -->
+  <div class="fixed inset-0 pointer-events-none z-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(141,38,63,0.18),rgba(26,17,22,0))] opacity-80"></div>
+  <canvas id="ambient-canvas" class="fixed inset-0 pointer-events-none z-0 w-full h-full opacity-60"></canvas>
+
+  <!-- ==========================================================================
+       FIXED LUXURY HEADER / NAVIGATION
+       ========================================================================== -->
+  <header class="fixed top-0 w-full z-50 bg-surface/75 backdrop-blur-2xl border-b border-outline-variant/20 shadow-[0_12px_40px_-10px_rgba(141,38,63,0.2)]">
+    <div class="h-20 max-w-7xl mx-auto px-gutter lg:px-margin flex items-center justify-between gap-gutter">
+      
+      <!-- Brand & Monogram -->
+      <a href="#prologue" class="flex items-center gap-space-sm group">
+        <img alt="Tanish & Tanuu" class="w-9 h-9 rounded-full object-cover shadow-[0_0_15px_rgba(255,178,188,0.3)] ring-1 ring-primary/30 group-hover:ring-primary transition-all duration-300" src="assets/images/optimized/avatar-couple.jpg" />
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">TANUU</span>
+          <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">A Year of Us</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links (The Chapters) -->
+      <nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md rounded-full px-space-sm py-space-xs shadow-[0_0_16px_rgba(141,38,63,0.4)]">
+        <a aria-current="page" class="uppercase tracking-widest transition-all duration-300 bg-primary-container text-on-primary-container font-label-md text-label-md rounded-full px-space-sm py-space-xs shadow-[0_0_16px_rgba(141,38,63,0.4)]" data-path="prologue" href="#prologue">Prologue</a>
+        <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300 px-space-xs py-space-xs" data-path="the-journey" href="#the-journey">The Journey</a>
+        <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300 px-space-xs py-space-xs" data-path="gallery" href="#gallery">Gallery</a>
+        <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300 px-space-xs py-space-xs" data-path="our-song" href="#our-song">Our Song</a>
+        <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300 px-space-xs py-space-xs" data-path="love-letter" href="#love-letter">Love Letter</a>
+        <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300 px-space-xs py-space-xs" data-path="voice-note" href="#voice-note">Voice Note</a>
+        <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300 px-space-xs py-space-xs" data-path="anniversary-reel" href="#anniversary-reel">Reel</a>
+        <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300 px-space-xs py-space-xs" data-path="promises" href="#promises">Promises</a>
+        <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300 px-space-xs py-space-xs" data-path="forever" href="#forever">Forever</a>
+      </nav>
+
+      <!-- Right Header Actions (Audio Pill, Date Badge, Profile Avatar, Mobile Toggle) -->
+      <div class="flex items-center gap-space-md">
+        
+        <!-- Interactive Audio Player Pill -->
+        <div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low/90 rounded-full border border-secondary/15 shadow-[inset_0_1px_0_rgba(232,207,181,0.15)]">
+          <button aria-label="Toggle music playback" class="w-6 h-6 rounded-full flex items-center justify-center bg-primary-container text-on-primary hover:bg-inverse-primary transition-all duration-300 shadow-sm" type="button">
+            <span class="material-symbols-outlined text-[14px]">play_arrow</span>
+          </button>
+          <div class="flex items-end gap-[2px] h-3 px-1">
+            <span class="w-[2px] h-2 bg-primary rounded-full animate-pulse"></span>
+            <span class="w-[2px] h-3 bg-secondary rounded-full animate-pulse delay-75"></span>
+            <span class="w-[2px] h-1.5 bg-primary rounded-full animate-pulse delay-150"></span>
+            <span class="w-[2px] h-2.5 bg-tertiary rounded-full animate-pulse delay-100"></span>
+          </div>
+          <span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest hidden sm:inline-block">Nocturne</span>
+        </div>
+
+        <!-- Date Stamp Badge & Avatar -->
+        <div class="flex items-center gap-space-xs">
+          <span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest hidden sm:inline-block px-space-xs py-1 rounded bg-surface-container-high/80 text-on-surface border border-outline-variant/30">04.11.2026</span>
+          <img alt="Profile Portrait" class="w-8 h-8 rounded-full object-cover shadow-[0_0_12px_rgba(232,207,181,0.25)] ring-1 ring-secondary/40" src="assets/images/optimized/avatar-couple.jpg" />
+        </div>
+
+        <!-- Mobile Drawer Hamburger Toggle Button -->
+        <button id="mobile-menu-toggle" aria-label="Open navigation menu" class="xl:hidden w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+          <span class="material-symbols-outlined text-xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl opacity-0 pointer-events-none transition-opacity duration-300 xl:hidden">
+    <div class="drawer-panel absolute right-0 top-0 bottom-0 w-72 max-w-[80vw] bg-surface-container-high border-l border-outline-variant/30 p-space-lg flex flex-col justify-between translate-x-full transition-transform duration-300">
+      <div>
+        <div class="flex items-center justify-between pb-space-md border-b border-outline-variant/20 mb-space-md">
+          <div class="flex flex-col">
+            <span class="font-headline-sm text-lg text-on-surface">TANUU</span>
+            <span class="font-label-caps text-[10px] text-primary uppercase tracking-widest">A Year of Us</span>
+          </div>
+          <button id="mobile-drawer-close" aria-label="Close menu" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface">
+            <span class="material-symbols-outlined text-base">close</span>
+          </button>
+        </div>
+
+        <!-- Mobile Nav Links -->
+        <nav class="flex flex-col gap-2">
+          <a class="px-space-md py-2.5 rounded-lg font-label-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="prologue" href="#prologue">Prologue</a>
+          <a class="px-space-md py-2.5 rounded-lg font-label-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="the-journey" href="#the-journey">The Journey</a>
+          <a class="px-space-md py-2.5 rounded-lg font-label-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="gallery" href="#gallery">Memory Vault</a>
+          <a class="px-space-md py-2.5 rounded-lg font-label-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-song" href="#our-song">Our Song</a>
+          <a class="px-space-md py-2.5 rounded-lg font-label-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="love-letter" href="#love-letter">Love Letter</a>
+          <a class="px-space-md py-2.5 rounded-lg font-label-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="voice-note" href="#voice-note">Voice Note</a>
+          <a class="px-space-md py-2.5 rounded-lg font-label-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="anniversary-reel" href="#anniversary-reel">Anniversary Reel</a>
+          <a class="px-space-md py-2.5 rounded-lg font-label-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="promises" href="#promises">Promises</a>
+          <a class="px-space-md py-2.5 rounded-lg font-label-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="forever" href="#forever">Forever</a>
+        </nav>
+      </div>
+
+      <div class="pt-space-md border-t border-outline-variant/20 flex flex-col gap-2">
+        <span class="font-label-caps text-secondary text-xs uppercase tracking-widest">First Anniversary Edition</span>
+        <span class="font-label-caps text-outline text-[11px]">04.11.2025 — 04.11.2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN EDITORIAL CONTENT -->
+  <main class="relative z-10 w-full pt-20 bg-background">
+    <div class="flex flex-col w-full relative overflow-hidden">
+
+      <!-- Ambient Nocturnal Background Glow Elements -->
+      <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[70rem] h-[45rem] bg-gradient-to-b from-primary-container/25 via-surface-container-lowest/0 to-transparent blur-3xl pointer-events-none -z-10"></div>
+      <div class="absolute top-[35rem] -left-32 w-96 h-96 bg-primary-container/15 rounded-full blur-[110px] pointer-events-none -z-10"></div>
+      <div class="absolute top-[48rem] -right-24 w-[28rem] h-[28rem] bg-secondary-container/20 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+
+      <!-- ======================================================================
+           CHAPTER 1: THE PROLOGUE MODAL / ARCHIVAL INVITATION BANNER
+           ====================================================================== -->
+      <section class="w-full max-w-7xl mx-auto px-gutter-mobile sm:px-gutter lg:px-margin pt-space-md pb-space-lg transition-all duration-700" id="prologue">
+        <div class="relative rounded-xl bg-surface-container/70 backdrop-blur-2xl border border-secondary/15 shadow-[0_16px_50px_-15px_rgba(141,38,63,0.35)] overflow-hidden">
+          
+          <!-- Top Luxury Shimmer Gradient Line -->
+          <div class="h-0.5 w-full bg-gradient-to-r from-transparent via-secondary/40 to-transparent"></div>
+          
+          <div class="p-space-md sm:p-space-lg lg:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md relative z-10">
+            <!-- Text Grouping -->
+            <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-2xl">
+              <div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high/80 mb-space-xs border border-primary/20 shadow-sm">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">A Private Dedication • 04.11.2026</span>
+              </div>
+              <h2 class="font-title-script text-title-script italic text-secondary-fixed mb-space-xs drop-shadow-[0_2px_12px_rgba(248,222,196,0.15)]">
+                Hey Tanuu, this is for you.
+              </h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant font-light leading-relaxed">
+                “Some stories are too sacred to fit into ordinary words... here is every whispered breath, every sunset gaze, and 365 days of us.”
+              </p>
+            </div>
+
+            <!-- Action CTA -->
+            <div class="flex flex-col items-center md:items-end gap-space-xs flex-shrink-0">
+              <a class="group relative inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded-full bg-gradient-to-r from-primary-container via-inverse-primary to-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-widest shadow-[0_0_28px_rgba(141,38,63,0.5)] transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_36px_rgba(255,178,188,0.45)]" href="#grand-hero" id="reveal-cta">
+                <span class="material-symbols-outlined text-primary text-base drop-shadow-sm group-hover:scale-125 transition-transform duration-300" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                <span>Open Your Surprise</span>
+                <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+              </a>
+              <span class="font-label-caps text-label-caps text-outline uppercase tracking-wider text-[10px]">Tap to enter Chapter I</span>
+            </div>
+          </div>
+
+          <!-- Atmospheric corner grain wash -->
+          <div class="absolute right-0 bottom-0 w-80 h-full pointer-events-none bg-gradient-to-l from-primary-container/20 to-transparent opacity-60"></div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           CHAPTER 2: THE GRAND ANNIVERSARY HERO SECTION
+           ====================================================================== -->
+      <section class="w-full max-w-7xl mx-auto px-gutter-mobile sm:px-gutter lg:px-margin pt-space-lg pb-space-xl" id="grand-hero">
+        
+        <!-- Hero Metadata & Monogram Badge Bar -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pb-space-md border-b border-outline-variant/15">
+          <div class="flex items-center gap-space-sm">
+            <div class="w-11 h-11 rounded-full bg-surface-container-high/90 flex items-center justify-center border border-secondary/25 shadow-[0_4px_20px_rgba(141,38,63,0.3)]">
+              <span class="font-title-script text-title-script italic text-secondary leading-none">T&T</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Tanuu • Devoted Muse</span>
+              <span class="font-body-sm text-body-sm text-outline">First Anniversary Retrospective</span>
+            </div>
+          </div>
+          <div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low/90 border border-primary/20 shadow-[0_4px_16px_rgba(0,0,0,0.4)]">
+            <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">stars</span>
+            <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-medium">04.11.2025 — 04.11.2026</span>
+          </div>
+        </div>
+
+        <!-- Editorial Header Zone -->
+        <div class="text-center flex flex-col items-center max-w-4xl mx-auto pt-space-md pb-space-lg">
+          <span class="font-label-caps text-label-caps uppercase text-primary tracking-[0.3em] mb-space-xs drop-shadow-sm">A Monument to Unconditional Love</span>
+          <h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-none mb-space-sm">
+            A YEAR <span class="font-title-script italic text-secondary font-normal">of</span> US.
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant font-light max-w-2xl">
+            365 days of luminous memories, countless stolen smiles, and a thousand silent reasons to be eternally grateful for you, Tanuu.
+          </p>
+        </div>
+
+        <!-- Central Cinematic Layout: Asymmetrical Display Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center pt-space-xs pb-space-lg">
+          
+          <!-- Left Editorial Accent & Milestone Cards (lg:col-span-4) -->
+          <div class="lg:col-span-4 flex flex-col gap-space-md order-2 lg:order-1">
+            
+            <!-- Milestone Metric 1: Days -->
+            <div class="group p-space-md rounded-lg bg-surface-container/60 backdrop-blur-xl border border-outline-variant/20 shadow-[0_12px_36px_-10px_rgba(0,0,0,0.5)] transition-all duration-300 hover:bg-surface-container-high/80 hover:border-primary/30">
+              <div class="flex items-center justify-between mb-space-xs">
+                <span class="font-label-caps text-label-caps uppercase text-outline tracking-widest">Milestone I</span>
+                <span class="material-symbols-outlined text-primary text-base">favorite</span>
+              </div>
+              <div class="flex items-baseline gap-space-xs">
+                <span class="font-headline-lg text-headline-lg text-secondary font-normal">365</span>
+                <span class="font-label-md text-label-md text-on-surface-variant">Sunrises & Days</span>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant/80 mt-1">Every sunrise with your laughter in mind.</p>
+            </div>
+
+            <!-- Milestone Metric 2: Hours -->
+            <div class="group p-space-md rounded-lg bg-surface-container/60 backdrop-blur-xl border border-outline-variant/20 shadow-[0_12px_36px_-10px_rgba(0,0,0,0.5)] transition-all duration-300 hover:bg-surface-container-high/80 hover:border-secondary/30">
+              <div class="flex items-center justify-between mb-space-xs">
+                <span class="font-label-caps text-label-caps uppercase text-outline tracking-widest">Milestone II</span>
+                <span class="material-symbols-outlined text-secondary text-base">schedule</span>
+              </div>
+              <div class="flex items-baseline gap-space-xs">
+                <span class="font-headline-lg text-headline-lg text-on-surface font-normal">8,760</span>
+                <span class="font-label-md text-label-md text-on-surface-variant">Golden Hours</span>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant/80 mt-1">Bound in conversations, soft whispers, and quiet peace.</p>
+            </div>
+
+            <!-- Milestone Metric 3: Infinite Love -->
+            <div class="group p-space-md rounded-lg bg-surface-container-high/70 backdrop-blur-xl border border-primary/30 shadow-[0_14px_40px_-10px_rgba(141,38,63,0.3)] transition-all duration-300 hover:bg-surface-bright/70">
+              <div class="flex items-center justify-between mb-space-xs">
+                <span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Milestone III</span>
+                <span class="material-symbols-outlined text-primary text-base">all_inclusive</span>
+              </div>
+              <div class="flex items-baseline gap-space-xs">
+                <span class="font-headline-lg text-headline-lg text-primary font-normal">∞</span>
+                <span class="font-label-md text-label-md text-secondary">Moments of Love</span>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant/80 mt-1">A devotion that outspans time itself.</p>
+            </div>
+
+            <!-- Handcrafted Inscription Fragment -->
+            <div class="p-space-md rounded-lg bg-surface-container-lowest/80 border border-secondary/20 shadow-md">
+              <span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block mb-1">Inscription Note</span>
+              <p class="font-title-script text-title-script italic text-secondary leading-snug">
+                “You transformed my ordinary days into poetry.”
+              </p>
+              <span class="font-label-caps text-label-caps text-primary uppercase tracking-widest text-[11px] block mt-2">— Forever Yours, Tanish</span>
+            </div>
+
+            <!-- Live Elapsed Clock Badge -->
+            <div class="p-space-sm rounded-lg bg-surface-container-low/70 border border-outline-variant/20 flex items-center justify-between">
+              <div class="flex flex-col">
+                <span class="font-label-caps text-[9px] uppercase tracking-widest text-secondary">Live Chronometer</span>
+                <div class="flex items-center gap-1 font-label-caps text-xs text-primary font-mono mt-0.5">
+                  <span id="live-days">365</span>d : 
+                  <span id="live-hours">00</span>h : 
+                  <span id="live-mins">00</span>m : 
+                  <span id="live-secs">00</span>s
+                </div>
+              </div>
+              <span class="material-symbols-outlined text-primary text-base animate-pulse">timelapse</span>
+            </div>
+          </div>
+
+          <!-- Center-Right Cinematic Photo Monument (lg:col-span-8) -->
+          <div class="lg:col-span-8 order-1 lg:order-2 relative">
+            <div class="relative rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] p-2 sm:p-3">
+              
+              <!-- Image Vessel with Vignette and Framing -->
+              <div class="relative w-full aspect-[4/5] sm:aspect-[16/11] rounded-xl overflow-hidden group">
+                <img alt="Tanish and Tanuu intimate romantic anniversary portrait" class="w-full h-full object-cover object-center transform scale-100 group-hover:scale-105 transition-transform duration-1000 ease-out" src="assets/images/optimized/hero-monument.jpg" />
+                
+                <!-- Vignette & Candlelight Overlays -->
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent opacity-85"></div>
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,transparent_40%,rgba(20,12,17,0.85)_100%)]"></div>
+                
+                <!-- Top Floating Archival Stamp -->
+                <div class="absolute top-4 left-4 flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-lowest/85 backdrop-blur-md border border-secondary/20 shadow-md">
+                  <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary text-[11px]">Our Story • Chapter Archive</span>
+                </div>
+
+                <!-- Bottom Floating Caption Overlay -->
+                <div class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-space-sm p-space-md rounded-xl bg-surface-container-lowest/90 backdrop-blur-2xl border border-outline-variant/30 shadow-[0_12px_40px_rgba(0,0,0,0.6)]">
+                  <div>
+                    <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary block mb-0.5">Chapter Archive • 01</span>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface">Our Sanctuary</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant font-light mt-0.5">Where time stood still for us, and ordinary moments turned into poetry.</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="font-title-script text-title-script italic text-secondary-fixed">T&T</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ambient Candlelight Rim Highlight -->
+              <div class="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-primary-container/30 via-secondary/20 to-primary/20 -z-10 blur-sm pointer-events-none"></div>
+            </div>
+
+            <!-- Interactive Audio Player Floating Keepsake -->
+            <div class="mt-space-md sm:mt-0 sm:absolute sm:-bottom-8 sm:right-8 w-full sm:w-auto z-20">
+              <div class="px-space-md py-space-sm rounded-full bg-surface-container-high/95 backdrop-blur-2xl border border-primary/20 shadow-[0_14px_45px_rgba(0,0,0,0.7)] flex items-center justify-between sm:justify-start gap-space-md">
+                <button aria-label="Play our soundtrack" class="w-10 h-10 rounded-full flex items-center justify-center bg-primary-container text-on-primary hover:bg-inverse-primary transition-all duration-300 shadow-[0_0_16px_rgba(141,38,63,0.6)]" id="audio-toggle-btn" type="button">
+                  <span class="material-symbols-outlined text-lg" id="play-icon">play_arrow</span>
+                </button>
+                <div class="flex flex-col min-w-0 pr-space-xs">
+                  <div class="flex items-center gap-1.5">
+                    <span class="font-label-caps text-label-caps uppercase text-primary tracking-widest text-[10px]">Now Playing</span>
+                    <span class="w-1 h-1 rounded-full bg-outline"></span>
+                    <span class="font-label-caps text-label-caps uppercase text-outline text-[10px]">Acoustic</span>
+                  </div>
+                  <span class="font-body-sm text-body-sm text-on-surface font-medium truncate max-w-[210px]">Until I Found You (Instrumental)</span>
+                </div>
+                <!-- Visualizer Animated Soundwaves -->
+                <div class="flex items-end gap-1 h-5 px-space-xs">
+                  <span class="w-[3px] h-3 bg-primary rounded-full animate-pulse"></span>
+                  <span class="w-[3px] h-5 bg-secondary rounded-full animate-pulse delay-100"></span>
+                  <span class="w-[3px] h-2 bg-primary-fixed-dim rounded-full animate-pulse delay-75"></span>
+                  <span class="w-[3px] h-4 bg-tertiary rounded-full animate-pulse delay-150"></span>
+                  <span class="w-[3px] h-3 bg-primary rounded-full animate-pulse delay-200"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Atmospheric Navigation Prompt / Scroll Explorer -->
+        <div class="pt-space-xl pb-space-sm flex flex-col items-center justify-center text-center gap-space-xs">
+          <a class="group flex flex-col items-center gap-2 text-on-surface-variant hover:text-primary transition-colors duration-300" href="#the-journey">
+            <span class="font-label-caps text-label-caps uppercase tracking-[0.25em] text-outline group-hover:text-primary transition-colors">
+              Scroll to Explore Our Chapters
+            </span>
+            <div class="w-8 h-8 rounded-full bg-surface-container border border-outline-variant/30 flex items-center justify-center shadow-md group-hover:bg-primary-container transition-all">
+              <span class="material-symbols-outlined text-primary group-hover:text-on-primary text-sm animate-bounce">arrow_downward</span>
+            </div>
+          </a>
+          <div class="w-24 h-[1px] bg-gradient-to-r from-transparent via-outline-variant to-transparent mt-space-xs"></div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           CHAPTER 3: THE JOURNEY (EDITORIAL RELATIONSHIP TIMELINE)
+           ====================================================================== -->
+      <section class="relative w-full py-space-xl overflow-hidden" id="the-journey">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-primary-container/10 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[500px] h-[500px] bg-secondary-container/15 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-gutter lg:px-margin relative z-10">
+          
+          <div class="text-center max-w-3xl mx-auto mb-space-xl">
+            <div class="inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-surface-container-low border border-primary/20 shadow-[0_0_20px_rgba(255,178,188,0.08)] mb-space-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+              <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">The Chronology • Year One</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface mb-2 tracking-tight">
+              OUR JOURNEY
+            </h2>
+            <p class="font-title-script text-title-script italic text-primary drop-shadow-[0_0_12px_rgba(255,178,188,0.3)]">
+              Chapter One & Beyond
+            </p>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mt-space-sm font-light">
+              Every gaze recorded, every quiet breath shared. Four distinct seasons marked by devotion, warmth, and the sacred beauty of choosing each other every sunrise.
+            </p>
+          </div>
+
+          <!-- Vertical Timeline Tree -->
+          <div class="relative w-full">
+            <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-[1px] -translate-x-1/2 bg-gradient-to-b from-transparent via-secondary/40 to-transparent pointer-events-none"></div>
+
+            <!-- Milestone 1: The First Spark (Our First Meeting / date 1.jpeg) -->
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-space-lg items-center mb-space-xl">
+              <div class="md:text-right pr-0 md:pr-space-lg pl-10 md:pl-0 order-2 md:order-1">
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary block mb-1">01 • The Beginning</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">The First Spark</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-space-md font-light leading-relaxed">
+                  The day our worlds first aligned. Under a quiet breeze, a single glance rearranged our quiet galaxies. Conversations flowed effortlessly like old sonnets remembered after lifetimes.
+                </p>
+                <div class="inline-flex items-center gap-2 px-space-sm py-1 rounded bg-surface-container border border-secondary/20 text-secondary text-xs">
+                  <span class="material-symbols-outlined text-sm">schedule</span>
+                  <span class="font-label-caps text-label-caps uppercase tracking-widest">Our First Date</span>
+                </div>
+              </div>
+              <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-lowest border border-primary/50 flex items-center justify-center shadow-[0_0_20px_rgba(255,178,188,0.5)] z-20">
+                <div class="w-3 h-3 rounded-full bg-primary ring-4 ring-primary-container/40"></div>
+              </div>
+              <div class="pl-10 md:pl-space-lg order-1 md:order-2">
+                <div class="relative group overflow-hidden rounded-xl bg-surface-container p-2 border border-outline-variant/20 shadow-[0_12px_40px_-10px_rgba(141,38,63,0.3)] transition-transform duration-500 hover:-translate-y-1">
+                  <div class="aspect-[4/3] overflow-hidden rounded-lg relative">
+                    <img alt="Our very first date memory" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-95" src="assets/images/optimized/journey-01.jpg" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+                      <span class="font-title-script text-title-script italic text-secondary text-base">The first glance</span>
+                      <span class="material-symbols-outlined text-sm text-primary">favorite</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 2: When Time Stood Still -->
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-space-lg items-center mb-space-xl">
+              <div class="pl-10 md:pl-0 pr-0 md:pr-space-lg order-1 md:order-1">
+                <div class="relative group bg-surface-container-high/90 p-4 rounded-xl border border-secondary/25 shadow-[0_12px_40px_-10px_rgba(232,207,181,0.2)] transition-transform duration-500 hover:-translate-y-1">
+                  <div class="aspect-[16/10] overflow-hidden rounded-lg relative mb-3">
+                    <img alt="Late night date memory" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/optimized/journey-02.jpg" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/70 via-transparent to-transparent"></div>
+                  </div>
+                  <div class="bg-surface-container-lowest/80 p-space-sm rounded-lg flex items-center justify-between border border-outline-variant/20">
+                    <div class="flex flex-col">
+                      <span class="font-title-script text-title-script italic text-secondary text-base">“Late night talks and shared dreams”</span>
+                      <span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant text-[10px]">Polaroid Archive</span>
+                    </div>
+                    <span class="material-symbols-outlined text-primary text-lg">hotel_class</span>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-lowest border border-secondary/50 flex items-center justify-center shadow-[0_0_20px_rgba(219,194,169,0.5)] z-20">
+                <div class="w-3 h-3 rounded-full bg-secondary ring-4 ring-secondary-container/40"></div>
+              </div>
+              <div class="pl-10 md:pl-space-lg order-2 md:order-2">
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-1">02 • Winter Lights</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">When Time Stood Still</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-space-md font-light leading-relaxed">
+                  Long drives, hands intertwined beneath warm blankets, and our laughter echoing through quiet avenues. We discovered that home is not a place, but the sanctuary inside your eyes.
+                </p>
+                <div class="flex items-center gap-2 text-on-surface-variant text-sm">
+                  <span class="material-symbols-outlined text-base text-primary">nights_stay</span>
+                  <span class="font-body-sm text-body-sm font-light">Late Night Conversations</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 3: Finding Home in You -->
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-space-lg items-center mb-space-xl">
+              <div class="md:text-right pr-0 md:pr-space-lg pl-10 md:pl-0 order-2 md:order-1">
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-tertiary block mb-1">03 • Growing Together</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Finding Home in You</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-space-md font-light leading-relaxed">
+                  Through every season, sharing quiet mornings and gentle laughter. We learned each other's quiet thoughts, soothing them into peaceful stillness.
+                </p>
+                <div class="inline-flex items-center gap-2 px-space-sm py-1 rounded bg-tertiary-container/30 border border-tertiary/30 text-tertiary text-xs">
+                  <span class="material-symbols-outlined text-sm">filter_vintage</span>
+                  <span class="font-label-caps text-label-caps uppercase tracking-widest">Peace & Solace</span>
+                </div>
+              </div>
+              <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-lowest border border-tertiary/50 flex items-center justify-center shadow-[0_0_20px_rgba(242,183,192,0.5)] z-20">
+                <div class="w-3 h-3 rounded-full bg-tertiary ring-4 ring-tertiary-container/40"></div>
+              </div>
+              <div class="pl-10 md:pl-space-lg order-1 md:order-2">
+                <div class="relative group bg-surface-container p-3 rounded-xl border border-outline-variant/20 shadow-[0_12px_40px_-10px_rgba(141,38,63,0.25)] transition-transform duration-500 hover:-translate-y-1">
+                  <div class="aspect-[4/3] overflow-hidden rounded-lg relative">
+                    <img alt="Growing closer together" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/optimized/journey-03.jpg" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-3 left-3 text-secondary font-title-script text-title-script italic text-base">
+                      Safe inside your warmth
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 4: A Year of Unconditional Love -->
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-space-lg items-center">
+              <div class="pl-10 md:pl-0 pr-0 md:pr-space-lg order-1 md:order-1">
+                <div class="relative rounded-2xl bg-gradient-to-br from-primary-container/40 via-surface-container-high to-surface-container-low p-1 border border-primary/30 shadow-[0_20px_60px_-15px_rgba(141,38,63,0.5)]">
+                  <div class="aspect-[16/11] overflow-hidden rounded-xl relative group">
+                    <img alt="One year of unconditional love together" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/optimized/journey-04.jpg" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+                    <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-caps text-label-caps uppercase tracking-widest shadow-md border border-secondary/20">
+                      365 Days Devoted
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-surface">
+                      <div class="flex flex-col">
+                        <span class="font-headline-sm text-headline-sm text-primary">Tanish & Tanuu</span>
+                        <span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">04.11.2025 — 04.11.2026</span>
+                      </div>
+                      <span class="material-symbols-outlined text-primary text-2xl drop-shadow-[0_0_10px_rgba(255,178,188,0.8)]">stars</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-surface-container-lowest border border-primary flex items-center justify-center shadow-[0_0_30px_rgba(255,178,188,0.8)] z-20">
+                <div class="w-4 h-4 rounded-full bg-primary ring-4 ring-primary/40 animate-pulse"></div>
+              </div>
+              <div class="pl-10 md:pl-space-lg order-2 md:order-2">
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary block mb-1">04 • Milestone I</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">A Year of Unconditional Love</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-space-md font-light leading-relaxed">
+                  Three hundred and sixty-five sunrises of choosing you, holding you, and falling deeper into your grace. Today is not merely an anniversary; it is the cornerstone of every tomorrow we will ever write together.
+                </p>
+                <div class="p-space-md rounded-xl bg-surface-container-high/60 backdrop-blur-md border border-secondary/20 shadow-inner flex items-center gap-space-md">
+                  <div class="w-12 h-12 rounded-full bg-primary-container/60 flex items-center justify-center text-primary shrink-0 shadow-[0_0_15px_rgba(141,38,63,0.5)]">
+                    <span class="material-symbols-outlined text-2xl">all_inclusive</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="font-title-script text-title-script italic text-secondary text-base">To eternity, Tanuu</span>
+                    <span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant text-[11px]">Unshakable, eternal, infinitely true</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           CHAPTER 4: OUR MEMORY VAULT (LUXURY BENTO GALLERY)
+           ====================================================================== -->
+      <section class="relative w-full py-space-xl bg-surface-container-lowest/80 border-y border-outline-variant/15 overflow-hidden" id="gallery">
+        <div class="absolute top-1/2 left-0 w-96 h-96 bg-primary-container/10 rounded-full blur-[160px] pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary-container/15 rounded-full blur-[140px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-gutter lg:px-margin relative z-10">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+            <div>
+              <div class="inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-surface-container-high border border-primary/20 mb-space-sm shadow-[0_0_15px_rgba(141,38,63,0.15)]">
+                <span class="material-symbols-outlined text-primary text-sm">photo_library</span>
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">The Visual Vault</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+                OUR MEMORY VAULT
+              </h2>
+              <p class="font-title-script text-title-script italic text-primary mt-1">
+                Fragments of light, laughter, and timeless memories
+              </p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2">
+              <button class="px-space-md py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest shadow-[0_0_15px_rgba(141,38,63,0.4)]" data-filter="all">
+                All Frames (06)
+              </button>
+              <button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase tracking-widest transition-colors" data-filter="candid">
+                Candid
+              </button>
+              <button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase tracking-widest transition-colors" data-filter="journeys">
+                Journeys
+              </button>
+              <button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase tracking-widest transition-colors" data-filter="motion">
+                Motion
+              </button>
+            </div>
+          </div>
+
+          <!-- Asymmetric Bento Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+            
+            <!-- Card 1: Hero Panoramic Film Strip Frame (Span 8 Cols) -->
+            <div class="md:col-span-8 group relative rounded-xl overflow-hidden bg-surface-container border border-outline-variant/20 shadow-[0_12px_40px_-10px_rgba(141,38,63,0.3)] cursor-pointer gallery-trigger" data-category="journeys" data-date="Golden Moments" data-desc="Watching the sky change colors with your hand in mine, where every quiet breath felt timeless." data-tag="Cinematic Panoramic" data-title="Twilight on the Balcony">
+              <div class="absolute top-0 left-0 right-0 h-4 bg-surface-container-highest/90 z-20 flex items-center justify-around px-4">
+                <span class="w-2 h-1.5 rounded-[1px] bg-background/80"></span>
+                <span class="w-2 h-1.5 rounded-[1px] bg-background/80"></span>
+                <span class="w-2 h-1.5 rounded-[1px] bg-background/80"></span>
+                <span class="w-2 h-1.5 rounded-[1px] bg-background/80"></span>
+                <span class="w-2 h-1.5 rounded-[1px] bg-background/80"></span>
+                <span class="w-2 h-1.5 rounded-[1px] bg-background/80"></span>
+                <span class="w-2 h-1.5 rounded-[1px] bg-background/80"></span>
+                <span class="w-2 h-1.5 rounded-[1px] bg-background/80"></span>
+              </div>
+              <div class="h-80 md:h-[420px] w-full overflow-hidden relative">
+                <img alt="Twilight panoramic memory" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/optimized/gallery-01.jpg" />
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+                <div class="absolute top-8 right-4 w-9 h-9 rounded-full bg-surface-container-lowest/70 backdrop-blur-md text-on-surface flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="material-symbols-outlined text-base">zoom_in</span>
+                </div>
+                <div class="absolute bottom-5 left-6 right-6 flex items-end justify-between">
+                  <div>
+                    <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary block mb-1">Archival Frame • 01</span>
+                    <h4 class="font-headline-sm text-headline-sm text-on-surface">Twilight on the Balcony</h4>
+                    <p class="font-title-script text-title-script italic text-secondary text-base mt-0.5">Golden skies and whispered memories</p>
+                  </div>
+                  <span class="px-space-sm py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md text-secondary font-label-caps text-label-caps uppercase tracking-wider text-[10px] border border-outline-variant/30">
+                    KODAK 400
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Polaroid Card with Note (Span 4 Cols) -->
+            <div class="md:col-span-4 group relative bg-surface-container-high p-4 rounded-xl border border-secondary/20 shadow-[0_12px_35px_-8px_rgba(232,207,181,0.15)] flex flex-col justify-between cursor-pointer gallery-trigger" data-category="candid" data-date="Quiet Moments" data-desc="The effortless grace in your smile—when you looked across and made the whole world fade away." data-tag="Polaroid Memory" data-title="The Coffee We Let Cool">
+              <div>
+                <div class="aspect-square w-full rounded-lg overflow-hidden relative mb-4">
+                  <img alt="The purest candid smile" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/optimized/gallery-02.jpg" />
+                  <div class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="material-symbols-outlined text-sm">fullscreen</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-1.5 text-primary mb-1">
+                  <span class="material-symbols-outlined text-xs">local_cafe</span>
+                  <span class="font-label-caps text-label-caps uppercase tracking-widest text-[10px]">Candid Keepsake</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface text-lg mb-1">The Coffee We Let Cool</h4>
+              </div>
+              <div class="mt-4 pt-3 bg-surface-container-lowest/70 p-3 rounded-lg border border-outline-variant/20">
+                <p class="font-title-script text-title-script italic text-secondary text-lg leading-snug">
+                  “You smiled, and I forgot what I was about to say.”
+                </p>
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-outline text-[9px] block text-right mt-1">Tan & Tanuu</span>
+              </div>
+            </div>
+
+            <!-- Card 3: Video Memory Card (Span 4 Cols) -->
+            <div class="md:col-span-4 group relative rounded-xl overflow-hidden bg-surface-container border border-outline-variant/20 shadow-[0_12px_40px_-10px_rgba(141,38,63,0.3)] cursor-pointer gallery-trigger" data-category="motion journeys" data-date="Sunlit Days" data-desc="Carefree laughter, sunny breezes, and moments that dance in the light forever." data-tag="Motion Memory" data-title="Summer Days .mov">
+              <div class="h-80 w-full relative overflow-hidden">
+                <img alt="Sunlit travel motion memory" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/optimized/gallery-03.jpg" />
+                <div class="absolute inset-0 bg-surface-container-lowest/50 group-hover:bg-surface-container-lowest/30 transition-colors"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-14 h-14 rounded-full bg-primary-container/80 backdrop-blur-md text-on-primary flex items-center justify-center shadow-[0_0_25px_rgba(141,38,63,0.8)] group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-2xl ml-0.5">play_arrow</span>
+                  </div>
+                </div>
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-surface">
+                  <div>
+                    <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary text-[10px] block">Motion Archive</span>
+                    <span class="font-headline-sm text-headline-sm text-base text-on-surface">Summer Days .mov</span>
+                  </div>
+                  <span class="font-label-caps text-label-caps uppercase text-primary text-xs tracking-wider">01:42</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: High-Fashion Couple Portrait (Span 4 Cols) -->
+            <div class="md:col-span-4 group relative rounded-xl overflow-hidden bg-surface-container border border-outline-variant/20 shadow-[0_12px_40px_-10px_rgba(141,38,63,0.25)] cursor-pointer gallery-trigger" data-category="candid" data-date="Special Evenings" data-desc="Dressed up and smiling together, when only your presence mattered in the entire room." data-tag="Studio Keepsake" data-title="Unspoken Smiles">
+              <div class="h-80 w-full relative overflow-hidden">
+                <img alt="Dressed up evening date" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/optimized/gallery-04.jpg" />
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-primary-container/20 to-transparent"></div>
+                <div class="absolute top-4 right-4 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="material-symbols-outlined text-sm">open_in_full</span>
+                </div>
+                <div class="absolute bottom-4 left-4 right-4">
+                  <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary text-[10px] block mb-0.5">Unspoken Smiles</span>
+                  <h4 class="font-headline-sm text-headline-sm text-base text-on-surface">Our Nights Out</h4>
+                  <p class="font-title-script text-title-script italic text-secondary text-sm">When only you mattered in that room</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 & 6 Combined Asymmetric Layout (Span 4 Cols) -->
+            <div class="md:col-span-4 flex flex-col gap-space-md">
+              
+              <!-- Card 5: Macro Intimate Memory -->
+              <div class="group relative rounded-xl overflow-hidden bg-surface-container border border-outline-variant/20 shadow-[0_10px_30px_-5px_rgba(232,207,181,0.15)] h-[190px] cursor-pointer gallery-trigger" data-category="candid" data-date="Every Day" data-desc="Your hand resting over mine, gentle warmth while the world is quiet and still." data-tag="Intimate Detail" data-title="Intertwined">
+                <img alt="Holding hands intimacy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/optimized/gallery-05.jpg" />
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+                <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between">
+                  <div>
+                    <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary text-[9px] block">Macro Frame</span>
+                    <span class="font-headline-sm text-headline-sm text-sm text-on-surface">Intertwined</span>
+                  </div>
+                  <span class="material-symbols-outlined text-primary text-base">favorite_border</span>
+                </div>
+              </div>
+
+              <!-- Card 6: Spontaneous Laughter Candid -->
+              <div class="group relative rounded-xl overflow-hidden bg-surface-container-high p-4 flex items-center gap-space-sm border border-primary/20 shadow-[0_10px_30px_-5px_rgba(141,38,63,0.2)] cursor-pointer gallery-trigger" data-category="candid" data-date="Pure Joy" data-desc="Unposed, uncontrollable laughter until our sides ached. No pretenses, just pure happiness." data-tag="Unfiltered Candid" data-title="Spontaneous Laughter">
+                <div class="w-20 h-20 rounded-lg overflow-hidden shrink-0 relative">
+                  <img alt="Joyful candid laughter" class="w-full h-full object-cover" src="assets/images/optimized/gallery-06.jpg" />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary text-[10px]">Unfiltered Candid</span>
+                  <span class="font-headline-sm text-headline-sm text-base text-on-surface">Dancing in Rain</span>
+                  <p class="font-title-script text-title-script italic text-secondary text-xs mt-0.5">Endless laughter by your side</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Interactive Archive Footnote Banner -->
+          <div class="mt-space-xl p-space-lg rounded-2xl bg-surface-container/60 backdrop-blur-xl border border-secondary/20 shadow-[inset_0_1px_0_rgba(232,207,181,0.15)] flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left">
+            <div class="flex items-center gap-space-md">
+              <div class="w-12 h-12 rounded-full bg-surface-container-highest border border-secondary/30 flex items-center justify-center text-secondary shadow-[0_0_15px_rgba(219,194,169,0.2)]">
+                <span class="material-symbols-outlined text-2xl">auto_stories</span>
+              </div>
+              <div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface text-lg">More Memories Await Our Touch</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant font-light">Over 70+ personal photos and countless whispered memories preserved in our private vault.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <button id="unlock-archive-btn" class="px-space-lg py-space-xs rounded-full bg-gradient-to-r from-primary-container to-surface-container-high text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest shadow-[0_0_20px_rgba(141,38,63,0.4)] hover:shadow-[0_0_25px_rgba(255,178,188,0.5)] transition-all">
+                Unlock Full Archive
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           CHAPTER 5: THE SOUNDTRACK OF US (AUDIO SUITE & VINYL RECORD)
+           ====================================================================== -->
+      <section class="relative w-full max-w-7xl mx-auto px-gutter-mobile lg:px-margin py-space-xl" id="our-song">
+        <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-xl">
+          <div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high/60 border border-primary/20 shadow-[0_0_20px_rgba(141,38,63,0.25)] mb-space-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Chapter V • The Resonant Melody</span>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">
+            THE SOUNDTRACK OF US
+          </h2>
+          <p class="font-title-script text-title-script italic text-primary mt-space-xs drop-shadow-[0_2px_12px_rgba(255,178,188,0.25)]">
+            “Where words fail, music speaks our quietest truths”
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+          
+          <!-- Left: Rotating Vinyl Record & Luxury Sleeve Art (7 Cols) -->
+          <div class="lg:col-span-7 rounded-xl bg-surface-container-low/70 backdrop-blur-2xl border border-outline-variant/20 p-space-md lg:p-space-lg shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col justify-between relative overflow-hidden group">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 pointer-events-none"></div>
+            
+            <div class="flex items-center justify-between z-10 mb-space-md">
+              <div class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Archival Master Recording • 24-Bit Lossless</span>
+              </div>
+              <span class="px-space-xs py-0.5 rounded bg-primary-container/40 border border-primary/30 font-label-caps text-label-caps uppercase text-primary tracking-widest">
+                Side A • 04.11
+              </span>
+            </div>
+
+            <!-- Vinyl & Album Sleeve Interactive Display -->
+            <div class="relative py-space-md flex flex-col sm:flex-row items-center justify-center gap-space-lg my-auto z-10">
+              
+              <!-- Vinyl Record disc -->
+              <div class="relative w-56 h-56 sm:w-64 sm:h-64 flex-shrink-0 flex items-center justify-center">
+                <div class="w-full h-full rounded-full bg-surface-container-lowest border border-outline-variant/30 shadow-[0_15px_35px_rgba(0,0,0,0.8),inset_0_0_0_2px_rgba(219,194,169,0.1)] flex items-center justify-center relative spin-vinyl" id="vinyl-disc">
+                  <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40 text-surface-variant" fill="none" viewbox="0 0 200 200">
+                    <circle cx="100" cy="100" r="92" stroke="currentColor" stroke-width="0.5"></circle>
+                    <circle cx="100" cy="100" r="82" stroke="currentColor" stroke-dasharray="2 3" stroke-width="0.75"></circle>
+                    <circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="0.5"></circle>
+                    <circle cx="100" cy="100" r="58" stroke="currentColor" stroke-dasharray="4 2" stroke-width="0.75"></circle>
+                    <circle cx="100" cy="100" r="46" stroke="currentColor" stroke-width="0.5"></circle>
+                  </svg>
+                  <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-primary-container to-surface-container-high border border-secondary/30 p-1 shadow-[0_0_20px_rgba(141,38,63,0.5)] flex flex-col items-center justify-center text-center relative z-10">
+                    <div class="w-4 h-4 rounded-full bg-surface-container-lowest shadow-[inset_0_1px_3px_rgba(0,0,0,0.8)] mb-1"></div>
+                    <span class="font-headline-sm text-[10px] leading-tight text-on-surface font-bold tracking-tight">T • T</span>
+                    <span class="font-label-caps text-[7px] leading-none uppercase tracking-widest text-secondary">Acoustic Edit</span>
+                  </div>
+                </div>
+                <div class="absolute -top-3 right-2 w-12 h-20 pointer-events-none opacity-80 hidden sm:block">
+                  <svg class="w-full h-full text-secondary" fill="none" viewbox="0 0 50 100">
+                    <circle cx="40" cy="10" fill="currentColor" r="6"></circle>
+                    <path d="M40 10 L25 65 L18 85" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+                    <rect fill="currentColor" height="14" rx="2" width="10" x="12" y="80"></rect>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Luxury Framed Album Artwork Cover -->
+              <div class="relative w-52 h-52 sm:w-60 sm:h-60 rounded-xl overflow-hidden border border-outline-variant/30 shadow-[0_20px_40px_rgba(0,0,0,0.7)] group-hover:scale-[1.02] transition-transform duration-500 flex-shrink-0">
+                <img alt="Until I Found You (Instrumental) album cover artwork" class="w-full h-full object-cover" src="assets/images/optimized/vinyl-album.jpg" />
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent"></div>
+                <div class="absolute bottom-space-sm left-space-sm right-space-sm">
+                  <span class="font-label-caps text-[9px] uppercase tracking-widest text-primary drop-shadow">Original Score</span>
+                  <p class="font-headline-sm text-sm text-on-surface leading-tight font-medium drop-shadow">Until I Found You (Instrumental)</p>
+                  <p class="font-title-script text-xs italic text-secondary">Tanish for Tanuu</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Audio Details & Waveform Visualizer -->
+            <div class="z-10 mt-space-md pt-space-sm bg-surface-container-highest/20 rounded-xl p-space-sm border border-outline-variant/15">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-sm">
+                <div>
+                  <h3 class="font-headline-md text-headline-sm text-on-surface">Until I Found You (Instrumental)</h3>
+                  <p class="font-body-md text-body-sm text-secondary">Orchestral Acoustic Strings • Con Moto • In Tanuu's Key</p>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <span class="font-label-caps text-label-caps text-primary px-space-xs py-0.5 rounded bg-surface-container border border-primary/20">432Hz HARMONIC</span>
+                </div>
+              </div>
+
+              <!-- Dynamic Equalizer Vibrating Waveform (27 Bars) -->
+              <div class="flex items-end justify-between h-10 px-1 gap-1 overflow-hidden" id="audio-equalizer">
+                <span class="w-1 bg-primary/70 rounded-full h-3 animate-pulse"></span>
+                <span class="w-1 bg-secondary rounded-full h-6 animate-pulse delay-75"></span>
+                <span class="w-1 bg-primary rounded-full h-8 animate-pulse delay-150"></span>
+                <span class="w-1 bg-tertiary rounded-full h-4 animate-pulse delay-100"></span>
+                <span class="w-1 bg-primary-fixed rounded-full h-9 animate-pulse delay-200"></span>
+                <span class="w-1 bg-secondary-fixed rounded-full h-5 animate-pulse delay-75"></span>
+                <span class="w-1 bg-primary-container rounded-full h-10 animate-pulse delay-300"></span>
+                <span class="w-1 bg-primary rounded-full h-7 animate-pulse delay-150"></span>
+                <span class="w-1 bg-secondary rounded-full h-4 animate-pulse delay-100"></span>
+                <span class="w-1 bg-tertiary-fixed rounded-full h-8 animate-pulse delay-250"></span>
+                <span class="w-1 bg-primary rounded-full h-9 animate-pulse delay-75"></span>
+                <span class="w-1 bg-secondary-fixed-dim rounded-full h-5 animate-pulse delay-150"></span>
+                <span class="w-1 bg-primary-container rounded-full h-7 animate-pulse delay-100"></span>
+                <span class="w-1 bg-secondary rounded-full h-10 animate-pulse delay-200"></span>
+                <span class="w-1 bg-primary rounded-full h-6 animate-pulse delay-300"></span>
+                <span class="w-1 bg-primary-fixed rounded-full h-8 animate-pulse delay-75"></span>
+                <span class="w-1 bg-secondary rounded-full h-4 animate-pulse delay-150"></span>
+                <span class="w-1 bg-primary-container rounded-full h-9 animate-pulse delay-200"></span>
+                <span class="w-1 bg-tertiary rounded-full h-5 animate-pulse delay-100"></span>
+                <span class="w-1 bg-primary rounded-full h-7 animate-pulse delay-300"></span>
+                <span class="w-1 bg-secondary-fixed rounded-full h-10 animate-pulse delay-75"></span>
+                <span class="w-1 bg-primary rounded-full h-6 animate-pulse delay-150"></span>
+                <span class="w-1 bg-tertiary-container rounded-full h-4 animate-pulse delay-200"></span>
+                <span class="w-1 bg-primary rounded-full h-8 animate-pulse delay-100"></span>
+                <span class="w-1 bg-secondary rounded-full h-5 animate-pulse delay-250"></span>
+                <span class="w-1 bg-primary-fixed rounded-full h-7 animate-pulse delay-150"></span>
+                <span class="w-1 bg-secondary rounded-full h-3 animate-pulse delay-75"></span>
+              </div>
+
+              <!-- Authentic Real Audio Stream Element -->
+              <audio id="main-audio-element" preload="metadata">
+                <source src="assets/audio/our-song.aac" type="audio/aac" />
+                <source src="assets/audio/our-song.mp4" type="audio/mp4" />
+                <source src="assets/audio/our-song.m4a" type="audio/mp4" />
+              </audio>
+
+              <!-- Scrubber Timeline Bar -->
+              <div class="mt-space-sm space-y-1">
+                <div class="relative w-full h-1.5 bg-surface-container rounded-full overflow-hidden cursor-pointer group/progress">
+                  <div class="absolute top-0 left-0 h-full w-[0%] bg-gradient-to-r from-primary-container via-primary to-secondary rounded-full" id="audio-progress-bar"></div>
+                  <div class="absolute top-0 left-[0%] -mt-0.5 -ml-1 w-2.5 h-2.5 rounded-full bg-secondary-fixed shadow-[0_0_8px_rgba(219,194,169,0.9)]" id="audio-progress-thumb"></div>
+                </div>
+                <div class="flex justify-between items-center text-label-caps font-label-caps text-on-surface-variant">
+                  <span class="text-primary font-medium tracking-wider" id="audio-current-time">00:00</span>
+                  <span class="text-secondary/70 tracking-widest uppercase" id="audio-current-section">Verse I</span>
+                  <span class="tracking-wider" id="audio-total-time">02:52</span>
+                </div>
+              </div>
+
+              <!-- Playback Controls Dock -->
+              <div class="flex items-center justify-between mt-space-md pt-space-xs">
+                <button aria-label="Shuffle track" class="text-on-surface-variant hover:text-primary transition-colors duration-300 p-2">
+                  <span class="material-symbols-outlined text-lg">shuffle</span>
+                </button>
+                <div class="flex items-center gap-space-md">
+                  <button aria-label="Previous verse" class="w-10 h-10 rounded-full bg-surface-container border border-outline-variant/30 flex items-center justify-center text-secondary hover:text-on-surface hover:bg-surface-container-high transition-all duration-300 shadow-sm">
+                    <span class="material-symbols-outlined text-xl">skip_previous</span>
+                  </button>
+                  <button aria-label="Toggle playback" class="w-14 h-14 rounded-full bg-gradient-to-br from-primary-container to-inverse-primary text-on-primary flex items-center justify-center shadow-[0_0_30px_rgba(141,38,63,0.6)] hover:scale-105 active:scale-95 transition-all duration-300" id="playback-btn">
+                    <span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+                  </button>
+                  <button aria-label="Next verse" class="w-10 h-10 rounded-full bg-surface-container border border-outline-variant/30 flex items-center justify-center text-secondary hover:text-on-surface hover:bg-surface-container-high transition-all duration-300 shadow-sm">
+                    <span class="material-symbols-outlined text-xl">skip_next</span>
+                  </button>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <button aria-label="Repeat track active" class="text-primary hover:text-primary-fixed transition-colors duration-300 p-2">
+                    <span class="material-symbols-outlined text-lg">repeat_one</span>
+                  </button>
+                  <div class="hidden sm:flex items-center gap-1.5 pl-space-xs">
+                    <span class="material-symbols-outlined text-sm text-secondary">volume_up</span>
+                    <div class="w-16 h-1 bg-surface-container rounded-full overflow-hidden">
+                      <div class="w-3/4 h-full bg-secondary rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Synchronized Lyrics Scroll (5 Cols) -->
+          <div class="lg:col-span-5 rounded-xl bg-surface-container-low/60 backdrop-blur-2xl border border-outline-variant/20 p-space-md lg:p-space-lg shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col justify-between relative overflow-hidden">
+            <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div>
+              <div class="flex items-center justify-between border-b border-outline-variant/20 pb-space-sm mb-space-md">
+                <div class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-primary text-base">lyrics</span>
+                  <span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Synchronized Stanzas</span>
+                </div>
+                <span class="font-label-caps text-[10px] uppercase tracking-wider text-secondary">Acoustic Verse</span>
+              </div>
+
+              <!-- Stanzas Scroll Container with gradient fades -->
+              <div class="relative max-h-[460px] overflow-y-auto pr-space-xs space-y-space-md scroll-smooth" id="lyrics-stream">
+                <!-- Stanza 1 -->
+                <div class="transition-opacity duration-500 opacity-60 hover:opacity-100" id="lyrics-stanza-1">
+                  <span class="stanza-badge font-label-caps text-[9px] uppercase tracking-widest text-outline">00:10 • Verse I</span>
+                  <p class="font-title-script text-title-script italic text-on-surface-variant leading-relaxed mt-1">
+                    “Georgia, wrap me up in all your gentle grace—<br />
+                    I was drifting in the quiet, searching for your face.”
+                  </p>
+                </div>
+
+                <!-- Stanza 2 (Active / Highlighted) -->
+                <div class="p-space-md rounded-xl bg-surface-container/80 border border-primary/30 shadow-[0_8px_30px_rgba(141,38,63,0.25)] transition-all duration-500" id="lyrics-stanza-2">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="stanza-badge font-label-caps text-[9px] uppercase tracking-widest text-primary flex items-center gap-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+                      00:45 • The Chorus
+                    </span>
+                    <span class="material-symbols-outlined text-xs text-primary">favorite</span>
+                  </div>
+                  <p class="font-headline-sm text-headline-sm text-on-surface leading-snug">
+                    “I would never fall in love until I found her—<br />
+                    I said, I would never fall unless it’s you I fall into.”
+                  </p>
+                  <p class="font-body-md text-body-sm text-secondary mt-space-xs">
+                    Lost within the darkness until you took my hand, Tanuu.
+                  </p>
+                </div>
+
+                <!-- Stanza 3 -->
+                <div class="transition-opacity duration-500 opacity-60 hover:opacity-100" id="lyrics-stanza-3">
+                  <span class="stanza-badge font-label-caps text-[9px] uppercase tracking-widest text-outline">01:25 • The Bridge</span>
+                  <p class="font-title-script text-title-script italic text-on-surface-variant leading-relaxed mt-1">
+                    “Heaven when I held you, safe against my chest,<br />
+                    Three hundred sixty-five days of knowing I was blessed.”
+                  </p>
+                </div>
+
+                <!-- Stanza 4 -->
+                <div class="transition-opacity duration-500 opacity-40 hover:opacity-80" id="lyrics-stanza-4">
+                  <span class="stanza-badge font-label-caps text-[9px] uppercase tracking-widest text-outline">02:15 • Coda</span>
+                  <p class="font-title-script text-title-script italic text-on-surface-variant leading-relaxed mt-1">
+                    “I said, I would never fall... until I found you.<br />
+                    Forever yours, across every chord of eternity.”
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Keepsake Player Note -->
+            <div class="mt-space-md pt-space-sm flex items-center justify-between border-t border-outline-variant/20 bg-surface-container-highest/30 rounded-lg p-space-sm z-10">
+              <div class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-secondary text-sm">bookmark</span>
+                <span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Dedicated on 04.11.2026</span>
+              </div>
+              <span class="font-title-script text-sm italic text-primary">With all my breath</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           CHAPTER 6: A LETTER FOR MY TANUU (THE TESTAMENT FOLIO)
+           ====================================================================== -->
+      <section class="relative w-full max-w-7xl mx-auto px-gutter-mobile lg:px-margin py-space-xl mt-space-lg" id="love-letter">
+        <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-xl">
+          <div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high/60 border border-secondary/20 shadow-[0_0_20px_rgba(219,194,169,0.15)] mb-space-sm">
+            <span class="material-symbols-outlined text-secondary text-sm">mail</span>
+            <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Chapter VI • The Testament</span>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">
+            A LETTER FOR MY TANUU
+          </h2>
+          <p class="font-title-script text-title-script italic text-primary mt-space-xs">
+            “Words I wish I could tell you every hour of every day.”
+          </p>
+        </div>
+
+        <!-- The Grand Parchment Love Letter Container -->
+        <div class="relative max-w-4xl mx-auto">
+          <div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary/15 rounded-full blur-[90px] pointer-events-none"></div>
+          <div class="absolute -bottom-16 -right-12 w-72 h-72 bg-primary-container/30 rounded-full blur-[110px] pointer-events-none"></div>
+          
+          <div class="relative rounded-2xl bg-surface-container-low/90 backdrop-blur-2xl border border-secondary/25 p-space-md sm:p-space-lg lg:p-space-xl shadow-[0_30px_70px_rgba(0,0,0,0.65)] overflow-hidden">
+            <div class="absolute inset-2 sm:inset-3 rounded-xl border border-secondary/15 pointer-events-none shadow-[inset_0_0_50px_rgba(0,0,0,0.4)]"></div>
+            
+            <!-- Letterhead & Monogram Crest -->
+            <div class="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between border-b border-secondary/15 pb-space-md mb-space-lg gap-space-sm">
+              <div class="flex items-center gap-space-sm">
+                <div class="w-12 h-12 rounded-full bg-surface-container-high border border-secondary/30 flex items-center justify-center shadow-[0_0_15px_rgba(219,194,169,0.3)]">
+                  <span class="font-title-script text-title-script italic text-secondary leading-none">T&T</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Private Epistle</span>
+                  <span class="font-headline-sm text-sm text-on-surface">To My Beloved Tanuu</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-space-xs text-on-surface-variant font-label-caps text-label-caps uppercase tracking-widest">
+                <span class="material-symbols-outlined text-sm text-secondary">schedule</span>
+                <span>Written by candlelight • 04.11.2026</span>
+              </div>
+            </div>
+
+            <!-- Letter Body Typography -->
+            <div class="relative z-10 space-y-space-md text-on-surface leading-relaxed font-body-lg text-body-lg">
+              <p class="font-title-script text-headline-sm italic text-secondary font-normal">
+                My Dearest Tanuu,
+              </p>
+              <p class="text-on-surface/90 font-light">
+                If I could crystallize this past year into a single breath, it would be the soft, quiet laughter you let out when you think no one is watching. Before you walked into my world, time was merely something to count—hours ticking away in routine silence. You transformed the mundane into sheer poetry. You made mornings feel sacred, and evenings feel like the quietest sanctuary on earth.
+              </p>
+              
+              <!-- Pull Quote Callout -->
+              <div class="my-space-md p-space-md rounded-xl bg-surface-container/60 border-l-2 border-primary shadow-[0_10px_25px_rgba(0,0,0,0.3)] relative">
+                <div class="absolute top-3 left-3 text-primary/30 font-title-script text-4xl leading-none">“</div>
+                <p class="font-title-script text-title-script italic text-primary-fixed pl-space-md leading-relaxed">
+                  You carry an incandescent kindness that softens every sharp edge of this world. In your warmth, I found a home I never knew I was longing for.
+                </p>
+              </div>
+
+              <p class="text-on-surface/90 font-light">
+                I love how passionately you speak about the little things—the way your eyes light up when a song touches your heart, how you hold my hand without thinking twice in crowded streets, and how effortless it is to exist together in silence. You don’t just share a life with me; you illuminate it from within.
+              </p>
+              <p class="text-on-surface/90 font-light">
+                Today marks three hundred and sixty-five days of loving you, yet every single morning feels like day one—the same wonder, the same racing heart, the same gratitude that out of eight billion souls, our stories chose to intertwine. If I were given a thousand lifetimes, Tanuu, I would search the dark until I found your gaze in every single one.
+              </p>
+            </div>
+
+            <!-- Closing, Signature, and Luxury Wax Seal -->
+            <div class="relative z-10 mt-space-xl pt-space-lg border-t border-secondary/15 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-space-lg">
+              <div class="space-y-1">
+                <p class="font-body-md text-body-sm uppercase tracking-widest text-secondary/80">Forever and always yours,</p>
+                <p class="font-title-script text-3xl sm:text-4xl italic text-primary drop-shadow-[0_2px_10px_rgba(255,178,188,0.4)]">
+                  Tanish ♥
+                </p>
+                <p class="font-label-caps text-label-caps uppercase tracking-widest text-outline">First Anniversary • Retrospective Complete</p>
+              </div>
+
+              <!-- Wax Seal Luxury Monogram Emblem -->
+              <div class="relative self-end sm:self-auto flex items-center gap-space-sm group cursor-pointer wax-seal-trigger" onclick="celebrateLove()" title="Sealed with Devotion">
+                <div class="flex flex-col text-right hidden sm:block">
+                  <span class="font-label-caps text-[9px] uppercase tracking-widest text-secondary">Authenticated</span>
+                  <span class="font-label-caps text-[10px] uppercase text-outline">Heart • Soul</span>
+                </div>
+                <div class="wax-seal w-16 h-16 sm:w-20 sm:h-20 rounded-full p-1 flex items-center justify-center">
+                  <div class="w-full h-full rounded-full bg-gradient-to-tr from-on-primary to-primary-container flex flex-col items-center justify-center shadow-inner text-center">
+                    <span class="font-title-script text-xl sm:text-2xl italic text-primary-fixed leading-none drop-shadow">T&T</span>
+                    <span class="font-label-caps text-[7px] uppercase tracking-wider text-secondary leading-none mt-0.5">SEALED</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Archival Stamp Bar -->
+            <div class="relative z-10 mt-space-lg pt-space-sm border-t border-outline-variant/20 bg-surface-container-highest/20 rounded-lg p-space-sm flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-caps text-label-caps text-center sm:text-left gap-space-xs">
+              <span class="text-secondary/70 uppercase tracking-widest">Archived under ‘The Eternal Keep’</span>
+              <div class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-primary text-xs">lock</span>
+                <span class="text-primary tracking-widest uppercase">Endless Devotion • Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           FEATURE 1: PERSONAL VOICE MESSAGE (VOICE NOTE PLAYER)
+           ====================================================================== -->
+      <section class="relative w-full max-w-4xl mx-auto px-gutter-mobile lg:px-margin py-space-xl" id="voice-note">
+        <div class="relative rounded-2xl bg-surface-container-low/90 backdrop-blur-2xl border border-primary/30 p-space-md sm:p-space-lg lg:p-space-xl shadow-[0_20px_50px_rgba(141,38,63,0.35)] overflow-hidden">
+          
+          <div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/20 mb-space-md">
+            <div class="flex items-center gap-space-xs">
+              <span class="material-symbols-outlined text-primary text-base">mic</span>
+              <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Chapter VI-B • A Voice For My Tanuu</span>
+            </div>
+            <span class="px-space-xs py-0.5 rounded bg-primary-container/40 font-label-caps text-[10px] uppercase text-primary tracking-widest border border-primary/20">
+              Private Audio Note
+            </span>
+          </div>
+
+          <div class="text-center max-w-xl mx-auto mb-space-lg">
+            <h3 class="font-title-script text-2xl sm:text-3xl italic text-primary-fixed leading-snug drop-shadow-sm">
+              “A little piece of my heart, just for you.”
+            </h3>
+            <p class="font-body-sm text-on-surface-variant font-light mt-1">
+              Recorded in the quiet of the night, words meant only for your ears.
+            </p>
+          </div>
+
+          <!-- Voice Player Control Card -->
+          <div class="p-space-md rounded-xl bg-surface-container/70 border border-secondary/20 shadow-inner flex flex-col sm:flex-row items-center gap-space-md justify-between">
+            
+            <!-- Heart-Shaped Play Button -->
+            <button id="voice-heart-btn" class="heart-button w-16 h-16 rounded-full bg-gradient-to-br from-primary-container to-inverse-primary text-on-primary flex items-center justify-center shadow-[0_0_20px_rgba(141,38,63,0.6)] cursor-pointer flex-shrink-0" aria-label="Play personal voice message" type="button">
+              <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+            </button>
+
+            <!-- Waveform & Scrubber Area -->
+            <div class="flex-1 w-full flex flex-col gap-2">
+              
+              <!-- 24-Bar Animated Waveform -->
+              <div class="flex items-end justify-between h-8 gap-1 px-1 overflow-hidden" id="voice-waveform">
+                <span class="w-1 bg-outline-variant/40 rounded-full h-3 eq-bar paused"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-6 eq-bar paused delay-75"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-8 eq-bar paused delay-150"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-5 eq-bar paused delay-100"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-7 eq-bar paused delay-200"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-4 eq-bar paused delay-75"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-8 eq-bar paused delay-300"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-6 eq-bar paused delay-150"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-5 eq-bar paused delay-100"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-8 eq-bar paused delay-250"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-7 eq-bar paused delay-75"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-4 eq-bar paused delay-150"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-8 eq-bar paused delay-100"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-6 eq-bar paused delay-200"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-7 eq-bar paused delay-300"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-5 eq-bar paused delay-75"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-8 eq-bar paused delay-150"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-6 eq-bar paused delay-200"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-4 eq-bar paused delay-100"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-7 eq-bar paused delay-300"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-5 eq-bar paused delay-75"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-6 eq-bar paused delay-150"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-4 eq-bar paused delay-200"></span>
+                <span class="w-1 bg-outline-variant/40 rounded-full h-7 eq-bar paused delay-100"></span>
+              </div>
+
+              <!-- Authentic Voice Recording Stream -->
+              <audio id="voice-audio-element" preload="metadata">
+                <source src="assets/audio/my-voice-note.aac" type="audio/aac" />
+                <source src="assets/audio/my-voice-note.mp4" type="audio/mp4" />
+                <source src="assets/audio/my-voice-note.m4a" type="audio/mp4" />
+                <source src="assets/audio/my-voice-note.mp3" type="audio/mpeg" />
+              </audio>
+
+              <!-- Clickable Progress Track -->
+              <div class="relative w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden cursor-pointer" id="voice-progress-track">
+                <div class="h-full bg-gradient-to-r from-primary via-primary to-secondary transition-all duration-300 w-0" id="voice-progress-bar"></div>
+              </div>
+
+              <!-- Time display & Replay button -->
+              <div class="flex items-center justify-between text-[11px] font-label-caps text-on-surface-variant font-mono">
+                <span id="voice-current-time" class="text-primary">00:00</span>
+                <div class="flex items-center gap-1">
+                  <button id="voice-replay-btn" class="hover:text-primary transition-colors flex items-center gap-1 text-[10px] uppercase font-label-caps">
+                    <span class="material-symbols-outlined text-sm">replay</span>
+                    <span>Replay</span>
+                  </button>
+                </div>
+                <span id="voice-total-time">00:49</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           FEATURE 2: OUR ONE-YEAR ANNIVERSARY REEL (CINEMATIC 9:16 REEL PLAYER)
+           ====================================================================== -->
+      <section class="relative w-full max-w-5xl mx-auto px-gutter-mobile lg:px-margin py-space-xl" id="anniversary-reel">
+        <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-xl">
+          <div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high/60 border border-primary/20 shadow-[0_0_20px_rgba(141,38,63,0.25)] mb-space-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Cinema Archive • 9:16 Reel</span>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">
+            OUR ONE-YEAR ANNIVERSARY REEL
+          </h2>
+          <p class="font-title-script text-title-script italic text-primary mt-space-xs">
+            “365 days of luminous moments, woven into a cinematic reel”
+          </p>
+        </div>
+
+        <!-- 9:16 Cinematic Player Frame -->
+        <div class="relative mx-auto w-full max-w-[380px] sm:max-w-[420px] aspect-[9/16] rounded-2xl overflow-hidden bg-surface-container-lowest border-2 border-secondary/30 shadow-[0_25px_70px_rgba(0,0,0,0.85)] group">
+          
+          <!-- Pre-rendered Video Element (Auto-detected if user provides MP4 in assets/videos/) -->
+          <video id="reel-mp4-video" class="hidden w-full h-full object-cover" controls playsinline preload="none"></video>
+
+          <!-- Interactive In-Browser Ken-Burns Slide Container -->
+          <div id="reel-slides-container" class="relative w-full h-full overflow-hidden">
+            
+            <!-- Active Slide Photo with Slow Ken Burns Pan/Zoom -->
+            <img id="reel-active-img" alt="Anniversary Reel Memory" class="w-full h-full object-cover transition-transform duration-[4000ms] ease-out ken-burns-in" src="assets/images/optimized/reel/reel-01.jpg" />
+            
+            <!-- Vignette & Luxury Gradient Overlays -->
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-surface-container-lowest/60 pointer-events-none"></div>
+
+            <!-- Top Header & Slide Step Indicator -->
+            <div class="absolute top-4 left-4 right-4 z-20 flex items-center justify-between">
+              <div class="flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md border border-secondary/20">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                <span class="font-label-caps text-[9px] uppercase tracking-widest text-secondary font-medium">One Year of Us</span>
+              </div>
+              <span id="reel-slide-step" class="font-mono text-xs text-primary px-space-xs py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-primary/20">
+                1 / 14
+              </span>
+            </div>
+
+            <!-- Top Progress Timeline Indicator Bar -->
+            <div class="absolute top-1 left-3 right-3 h-1 bg-surface-container-highest/60 rounded-full overflow-hidden z-20">
+              <div id="reel-progress-fill" class="h-full bg-gradient-to-r from-primary to-secondary transition-all duration-300 w-[7%]"></div>
+            </div>
+
+            <!-- Center Replay / Ending Title Card (Shown on completion) -->
+            <div id="reel-end-card" class="absolute inset-0 z-30 bg-surface-container-lowest/90 backdrop-blur-md flex flex-col items-center justify-center p-space-md text-center opacity-0 pointer-events-none transition-opacity duration-500">
+              <div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center border border-primary/30 shadow-lg mb-space-sm">
+                <span class="font-title-script text-2xl italic text-primary">T&T</span>
+              </div>
+              <span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary mb-1">Our Journey Continues</span>
+              <h3 class="font-headline-md text-xl text-on-surface mb-2">Happy First Anniversary, My Love</h3>
+              <p class="font-title-script text-base italic text-primary-fixed mb-space-md">“Here's to our every tomorrow • To infinity”</p>
+              <button id="reel-end-replay-btn" class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-widest shadow-md hover:scale-105 transition-all flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-sm">replay</span>
+                <span>Watch Again</span>
+              </button>
+            </div>
+
+            <!-- Bottom Floating Memory Caption -->
+            <div class="absolute bottom-16 left-4 right-4 z-20 p-space-sm rounded-xl bg-surface-container-lowest/85 backdrop-blur-xl border border-secondary/20 shadow-[0_8px_30px_rgba(0,0,0,0.6)]">
+              <p id="reel-active-caption" class="font-title-script text-base italic text-secondary leading-snug transition-opacity duration-300">
+                The beginning of our quiet forever
+              </p>
+            </div>
+
+            <!-- Bottom Player Navigation Controls Dock -->
+            <div class="absolute bottom-3 left-4 right-4 z-20 flex items-center justify-between">
+              <button id="reel-prev-btn" class="w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md border border-outline-variant/30 text-on-surface hover:text-primary flex items-center justify-center transition-colors" aria-label="Previous photo">
+                <span class="material-symbols-outlined text-base">skip_previous</span>
+              </button>
+
+              <button id="reel-play-btn" class="w-11 h-11 rounded-full bg-gradient-to-br from-primary-container to-inverse-primary text-on-primary flex items-center justify-center shadow-[0_0_20px_rgba(141,38,63,0.7)] hover:scale-105 active:scale-95 transition-all" aria-label="Toggle reel playback">
+                <span class="material-symbols-outlined text-xl">play_arrow</span>
+              </button>
+
+              <div class="flex items-center gap-1.5">
+                <button id="reel-replay-btn" class="w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md border border-outline-variant/30 text-on-surface hover:text-primary flex items-center justify-center transition-colors" aria-label="Replay reel">
+                  <span class="material-symbols-outlined text-base">replay</span>
+                </button>
+                <button id="reel-next-btn" class="w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md border border-outline-variant/30 text-on-surface hover:text-primary flex items-center justify-center transition-colors" aria-label="Next photo">
+                  <span class="material-symbols-outlined text-base">skip_next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           CHAPTER 7: LITTLE THINGS THAT MAKE YOU SPECIAL (12 FACETS)
+           ====================================================================== -->
+      <section class="relative w-full overflow-hidden py-space-xl lg:py-24 px-gutter lg:px-margin max-w-7xl mx-auto" id="little-things">
+        <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-primary-container/20 rounded-full blur-[130px] pointer-events-none"></div>
+        <div class="absolute top-1/3 -right-24 w-[420px] h-[420px] bg-secondary-container/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col items-center">
+          <div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high/90 border border-secondary/20 shadow-md">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            <span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Archive Chapter VII</span>
+            <span class="text-outline-variant font-label-caps">/</span>
+            <span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Twelve Facets</span>
+          </div>
+
+          <h2 class="mt-space-md font-headline-lg text-headline-lg lg:text-display-hero text-center text-on-surface tracking-tight max-w-4xl">
+            Little Things That Make You <span class="font-title-script italic text-primary">Special</span>
+          </h2>
+          <p class="mt-space-xs font-body-lg text-body-lg text-secondary text-center max-w-2xl font-light">
+            A private catalogue of quiet glances, unspoken gestures, and incandescent moments that render my devotion absolute.
+          </p>
+
+          <!-- 12-Card Interactive Bento Grid (4x3 on Desktop) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter w-full mt-space-xl">
+            
+            <!-- Card 01 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">01</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">The Morning Glow</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">Dawn Reverie</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                The effortless poise in your stillness before the world awakens—when light touches your cheek and time suspends completely.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Remembered</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Card 02 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">02</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">coffee</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">Stealing My Roast</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">Shared Habit</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Taking the very first sip of my warm cup with that playful, triumphant smile that disarms every pretense of boundary.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Cherished</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Card 03 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">03</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">sentiment_very_satisfied</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">Unfiltered Laughter</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">Pure Melody</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                When you lose your breath from laughing so hard you tilt backward into my chest, filling crowded rooms with pure amber sunlight.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Precious</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Card 04 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">04</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">Midnight Whispers</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">Confessions</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Those hushed debates at two in the morning where we dismantle constellations, unveil raw truths, and forget sleep completely.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Intimate</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Card 05 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">05</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">touch_app</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">The Thumb Stroke</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">Silent Anchor</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                The habitual tracing of your thumb across my knuckles whenever we are seated together or walking into an uncertain storm.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Sacred</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Card 06 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">06</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">Bookmarked Pages</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">Mindful Soul</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Your delicate annotations in margins, dog-earing passages on human spirit that you subsequently recite to me by candlelight.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Endless</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Card 07 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">07</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">Your Gentle Grace</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">Aura</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                The instinctive kindness you bestow upon every creature, server, and passing stranger without needing an audience.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Devoted</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Card 08 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">08</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">audiotrack</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">Humming in Transit</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">Subconscious</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                The quiet, melodic humming you offer while looking out passenger windows, unaware that it is the sweetest tempo of my life.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Serenade</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Card 09 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">09</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">fireplace</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">Fierce Loyalty</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">Strength</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                How unconditionally you protect those you love, standing tall with fire in your eyes and an indomitable heart.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Unshakable</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">10</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">nightlight</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">Tangled Blankets</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">Sanctuary</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                The way you nest into my shoulder like you were custom-crafted to rest right there, fitting every groove of my chest.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Safe Harbor</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">11</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">explore</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">Your Adventurous Spirit</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">Curiosity</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Taking my hand through midnight alleyways, seaside cliffs, and foreign coasts with utter fearlessness and radiant thrill.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Limitless</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl border border-outline-variant/20 p-space-lg shadow-xl transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high/80 cursor-pointer overflow-hidden">
+              <div class="absolute top-0 right-0 p-space-md font-headline-sm text-headline-sm text-outline-variant/40 group-hover:text-primary transition-colors">12</div>
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+              </div>
+              <h3 class="mt-space-md font-headline-sm text-headline-sm text-on-surface">Simply Being You</h3>
+              <p class="mt-space-xs font-label-caps text-label-caps uppercase text-secondary tracking-widest">The Core</p>
+              <div class="mt-space-md pt-space-xs font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Not one singular ornament, but the breathtaking symphony of your essence that makes every second with you sacred poetry.
+              </div>
+              <div class="mt-space-md flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+                <span>Eternity</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           CHAPTER 8: MY PROMISES (UNWAVERING VOWS)
+           ====================================================================== -->
+      <section class="relative z-10 py-space-xl lg:py-32 px-gutter lg:px-margin max-w-7xl mx-auto flex flex-col items-center" id="promises">
+        <div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high/90 border border-secondary/20 shadow-md">
+          <span class="material-symbols-outlined text-sm text-secondary">verified</span>
+          <span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Archive Chapter VIII</span>
+          <span class="text-outline-variant font-label-caps">/</span>
+          <span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Unwavering Vows</span>
+        </div>
+
+        <h2 class="mt-space-md font-headline-lg text-headline-lg lg:text-display-hero text-center text-on-surface tracking-tight max-w-4xl">
+          Things I Promise To Keep <span class="font-title-script italic text-secondary">Choosing</span>
+        </h2>
+        <p class="mt-space-xs font-body-lg text-body-lg text-secondary text-center max-w-2xl font-light">
+          These are not fleeting sentiments written in sand, but foundational pillars carved in stone for all our chapters ahead.
+        </p>
+
+        <!-- Promises Stack -->
+        <div class="flex flex-col gap-space-md w-full max-w-4xl mt-space-xl">
+          
+          <!-- Promise 01 -->
+          <div class="group relative rounded-xl bg-surface-container/60 backdrop-blur-2xl border border-outline-variant/20 p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-xl transition-all duration-300 hover:bg-surface-container-high hover:border-primary/30">
+            <div class="flex items-start md:items-center gap-space-md">
+              <span class="font-headline-md text-headline-md text-primary font-light">01</span>
+              <div class="flex flex-col">
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">First Vow</span>
+                <p class="font-headline-sm text-headline-sm text-on-surface mt-1">To listen with all my heart, even in silence.</p>
+              </div>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/20 flex items-center justify-center text-secondary group-hover:text-primary group-hover:scale-110 transition-all flex-shrink-0">
+              <span class="material-symbols-outlined text-xl">hearing</span>
+            </div>
+          </div>
+
+          <!-- Promise 02 -->
+          <div class="group relative rounded-xl bg-surface-container/60 backdrop-blur-2xl border border-outline-variant/20 p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-xl transition-all duration-300 hover:bg-surface-container-high hover:border-primary/30">
+            <div class="flex items-start md:items-center gap-space-md">
+              <span class="font-headline-md text-headline-md text-primary font-light">02</span>
+              <div class="flex flex-col">
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Second Vow</span>
+                <p class="font-headline-sm text-headline-sm text-on-surface mt-1">To stand beside you through every storm and every triumph.</p>
+              </div>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/20 flex items-center justify-center text-secondary group-hover:text-primary group-hover:scale-110 transition-all flex-shrink-0">
+              <span class="material-symbols-outlined text-xl">shield</span>
+            </div>
+          </div>
+
+          <!-- Promise 03 -->
+          <div class="group relative rounded-xl bg-surface-container/60 backdrop-blur-2xl border border-outline-variant/20 p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-xl transition-all duration-300 hover:bg-surface-container-high hover:border-primary/30">
+            <div class="flex items-start md:items-center gap-space-md">
+              <span class="font-headline-md text-headline-md text-primary font-light">03</span>
+              <div class="flex flex-col">
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Third Vow</span>
+                <p class="font-headline-sm text-headline-sm text-on-surface mt-1">To make you laugh when the world feels heavy.</p>
+              </div>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/20 flex items-center justify-center text-secondary group-hover:text-primary group-hover:scale-110 transition-all flex-shrink-0">
+              <span class="material-symbols-outlined text-xl">wb_sunny</span>
+            </div>
+          </div>
+
+          <!-- Promise 04 -->
+          <div class="group relative rounded-xl bg-surface-container/60 backdrop-blur-2xl border border-outline-variant/20 p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-xl transition-all duration-300 hover:bg-surface-container-high hover:border-primary/30">
+            <div class="flex items-start md:items-center gap-space-md">
+              <span class="font-headline-md text-headline-md text-primary font-light">04</span>
+              <div class="flex flex-col">
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Fourth Vow</span>
+                <p class="font-headline-sm text-headline-sm text-on-surface mt-1">To choose you, intentionally and passionately, every single day.</p>
+              </div>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/20 flex items-center justify-center text-secondary group-hover:text-primary group-hover:scale-110 transition-all flex-shrink-0">
+              <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+            </div>
+          </div>
+
+          <!-- Promise 05 -->
+          <div class="group relative rounded-xl bg-surface-container/60 backdrop-blur-2xl border border-outline-variant/20 p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-xl transition-all duration-300 hover:bg-surface-container-high hover:border-primary/30">
+            <div class="flex items-start md:items-center gap-space-md">
+              <span class="font-headline-md text-headline-md text-primary font-light">05</span>
+              <div class="flex flex-col">
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Fifth Vow</span>
+                <p class="font-headline-sm text-headline-sm text-on-surface mt-1">To build a future that honors your wildest dreams.</p>
+              </div>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/20 flex items-center justify-center text-secondary group-hover:text-primary group-hover:scale-110 transition-all flex-shrink-0">
+              <span class="material-symbols-outlined text-xl">castle</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           CHAPTER 9: THE GRAND FINALE & EPILOGUE (EMOTIONAL CLIMAX)
+           ====================================================================== -->
+      <section class="relative w-full overflow-hidden bg-gradient-to-b from-surface via-surface-container-lowest to-surface py-32 lg:py-48 px-gutter lg:px-margin" id="forever">
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="w-[900px] h-[900px] bg-primary-container/25 rounded-full blur-[160px] animate-pulse"></div>
+          <div class="w-[500px] h-[500px] bg-secondary-container/20 rounded-full blur-[100px]"></div>
+        </div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(248,222,196,0.08)_0%,transparent_70%)] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto flex flex-col items-center text-center">
+          
+          <!-- Epilogue Marker -->
+          <div class="flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-high/80 border border-primary/30 shadow-2xl backdrop-blur-xl">
+            <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">loyalty</span>
+            <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Chapter IX • The Grand Finale</span>
+          </div>
+
+          <!-- Crescendo Typography: Staggered Poetic Prelude -->
+          <div class="mt-space-xl flex flex-col items-center gap-space-xs">
+            <p class="font-title-script text-title-script italic text-primary/80 tracking-wide">
+              One year down...
+            </p>
+            <p class="font-headline-md text-headline-md lg:text-headline-lg text-secondary font-light max-w-2xl mt-space-xs">
+              And if life gave me a thousand chances...
+            </p>
+            <p class="font-display-hero text-headline-lg lg:text-display-hero text-on-surface mt-space-xs tracking-tight">
+              I would still choose you, <span class="font-title-script italic text-primary">Tanuu.</span>
+            </p>
+          </div>
+
+          <!-- Centerpiece Portrait in Arched Portal -->
+          <div class="relative mt-space-xl w-72 sm:w-96 lg:w-[420px] aspect-[4/5] rounded-t-full rounded-b-2xl overflow-hidden border-2 border-secondary/30 shadow-[0_25px_60px_-15px_rgba(141,38,63,0.5)] group">
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent z-10 opacity-80"></div>
+            <img alt="Tanish and Tanuu anniversary portrait" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/optimized/finale-arch.jpg" />
+            <div class="absolute bottom-6 left-0 right-0 z-20 flex flex-col items-center">
+              <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Forever Marked • To Eternity, Tanuu</span>
+            </div>
+          </div>
+
+          <!-- Proclamation Banner -->
+          <div class="mt-space-xl flex flex-col items-center">
+            <div class="px-space-lg py-space-sm rounded-full bg-primary-container/40 border border-primary/40 backdrop-blur-2xl shadow-[0_0_40px_rgba(255,178,188,0.2)]">
+              <h1 class="font-headline-md text-headline-md lg:text-headline-lg text-primary tracking-wide flex items-center justify-center gap-3">
+                <span>HAPPY FIRST ANNIVERSARY, MY LOVE</span>
+                <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+              </h1>
+            </div>
+            <div class="mt-space-md flex items-center gap-space-sm text-secondary">
+              <span class="font-label-caps text-label-caps uppercase tracking-widest">Established</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              <span class="font-headline-sm text-headline-sm text-on-surface">04.11.2025</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              <span class="font-label-caps text-label-caps uppercase tracking-widest">Into Eternity</span>
+            </div>
+
+            <!-- Personal Sign-Off -->
+            <div class="mt-space-lg flex flex-col items-center">
+              <p class="font-title-script text-title-script italic text-secondary text-2xl">
+                With all my love,
+              </p>
+              <p class="font-headline-lg text-headline-lg text-primary mt-1">
+                Tanish
+              </p>
+            </div>
+          </div>
+
+          <!-- Final Interactive CTAs -->
+          <div class="mt-space-xl flex flex-wrap items-center justify-center gap-space-md">
+            <button id="replay-symphony-btn" class="flex items-center gap-space-xs px-space-lg py-space-md rounded-full bg-gradient-to-r from-primary-container to-on-primary-fixed-variant text-on-primary font-label-caps text-label-caps uppercase tracking-widest shadow-[0_0_30px_rgba(141,38,63,0.45)] hover:shadow-[0_0_45px_rgba(255,178,188,0.5)] hover:scale-105 transition-all duration-300" onclick="celebrateLove()" type="button">
+              <span class="material-symbols-outlined text-lg">music_note</span>
+              <span>Replay Our Symphony ♫</span>
+            </button>
+            <button id="download-keepsake-btn" class="flex items-center gap-space-xs px-space-lg py-space-md rounded-full bg-surface-container-high/90 border border-secondary/25 text-secondary hover:text-on-surface hover:bg-surface-bright font-label-caps text-label-caps uppercase tracking-widest shadow-lg hover:scale-105 transition-all duration-300" type="button">
+              <span class="material-symbols-outlined text-lg">download</span>
+              <span>Download Keepsake Memory Book</span>
+            </button>
+          </div>
+
+          <!-- Final Devotional Quote Footnote -->
+          <div class="mt-space-xl max-w-xl text-center">
+            <p class="font-body-sm text-body-sm text-on-surface-variant italic font-light">
+              “Every sunrise with you feels like an answered prayer; every sunset feels like a sacred quiet promised to keep forever.”
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       GLOBAL LUXURY FOOTER
+       ========================================================================== -->
+  <footer class="relative z-10 w-full bg-surface-container-lowest/90 border-t border-outline-variant/20 backdrop-blur-2xl py-space-xl shadow-[0_-8px_30px_rgba(0,0,0,0.4)]">
+    <div class="max-w-7xl mx-auto px-gutter lg:px-margin flex flex-col items-center justify-center gap-space-md text-center">
+      <div class="w-10 h-10 rounded-full bg-surface-container border border-secondary/20 flex items-center justify-center shadow-[0_0_20px_rgba(141,38,63,0.3)]">
+        <span class="font-title-script text-title-script italic text-primary leading-none">T&T</span>
+      </div>
+      <p class="font-body-md text-body-md text-secondary font-light tracking-wide flex items-center gap-space-xs justify-center flex-wrap">
+        <span>Created with devoted love by Tanish for Tanuu</span>
+        <span class="material-symbols-outlined text-primary text-base drop-shadow-[0_0_8px_rgba(255,178,188,0.8)]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+        <span>— 04.11.2026</span>
+      </p>
+      <div class="flex items-center gap-space-lg text-on-surface-variant">
+        <span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Chapter I • Anniversary Edition</span>
+        <span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+        <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">A Forever Retrospective</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       INTERACTIVE MEMORY DETAIL MODAL
+       ========================================================================== -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8 bg-surface-container-lowest/90 backdrop-blur-2xl opacity-0 pointer-events-none transition-all duration-500" id="memoryModal">
+    <div class="relative max-w-4xl w-full bg-surface-container-high rounded-xl overflow-hidden border border-secondary/30 shadow-[0_25px_60px_-15px_rgba(141,38,63,0.5)] transform scale-95 transition-transform duration-500">
+      <button class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-surface/80 text-on-surface hover:text-primary flex items-center justify-center transition-colors" id="closeModalBtn" aria-label="Close memory modal">
+        <span class="material-symbols-outlined text-lg">close</span>
+      </button>
+      <div class="grid grid-cols-1 md:grid-cols-12">
+        <div class="md:col-span-7 relative h-72 md:h-[460px] bg-surface-container">
+          <img class="w-full h-full object-cover" id="modalImg" alt="Memory Detail" src="assets/images/optimized/hero-monument.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-transparent to-transparent md:hidden"></div>
+        </div>
+        <div class="md:col-span-5 p-space-md sm:p-space-lg flex flex-col justify-between bg-surface-container-high">
+          <div>
+            <div class="flex items-center gap-space-xs text-primary mb-2">
+              <span class="material-symbols-outlined text-sm">auto_awesome</span>
+              <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary" id="modalTag">Archival Moment</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs" id="modalTitle">Twilight on the Balcony</h3>
+            <p class="font-label-caps text-label-caps uppercase tracking-wider text-secondary mb-space-md" id="modalDate">Golden Moments</p>
+            <p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed" id="modalDesc">
+              Watching the sky change colors with your hand in mine, where every quiet breath felt timeless.
+            </p>
+          </div>
+          <div class="pt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+            <div class="flex items-center gap-1.5 text-secondary">
+              <span class="material-symbols-outlined text-base">lock</span>
+              <span class="font-label-caps text-label-caps uppercase tracking-wider">Preserved in Archive</span>
+            </div>
+            <button id="modalCherishBtn" class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest hover:bg-inverse-primary transition-all">
+              Cherish
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FULL ARCHIVE VAULT UNLOCK MODAL
+       ========================================================================== -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8 bg-surface-container-lowest/90 backdrop-blur-2xl opacity-0 pointer-events-none transition-all duration-500" id="fullArchiveModal">
+    <div class="relative max-w-3xl w-full bg-surface-container-high rounded-xl overflow-hidden border border-secondary/30 shadow-[0_25px_60px_-15px_rgba(141,38,63,0.5)] p-space-md sm:p-space-lg transform scale-95 transition-transform duration-500">
+      <button class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-surface/80 text-on-surface hover:text-primary flex items-center justify-center transition-colors" id="closeArchiveModalBtn" aria-label="Close archive modal">
+        <span class="material-symbols-outlined text-lg">close</span>
+      </button>
+
+      <div class="flex items-center gap-space-xs text-primary mb-2">
+        <span class="material-symbols-outlined text-base">lock_open</span>
+        <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Private Vault Unlocked</span>
+      </div>
+      <h3 class="font-headline-md text-headline-sm text-on-surface mb-2">Our Infinite Keepsake Vault</h3>
+      <p class="font-body-md text-body-md text-on-surface-variant font-light mb-space-md">
+        Every train ride, every shared playlist, every late night voice note, and every photo taken while laughing too hard to focus. This vault belongs only to Tanuu and Tanish.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-space-md">
+        <div class="p-3 rounded-lg bg-surface-container border border-outline-variant/20 flex flex-col items-center text-center">
+          <span class="font-headline-sm text-primary text-xl font-normal">70+</span>
+          <span class="font-label-caps text-[10px] uppercase tracking-wider text-secondary mt-1">Personal Photos</span>
+        </div>
+        <div class="p-3 rounded-lg bg-surface-container border border-outline-variant/20 flex flex-col items-center text-center">
+          <span class="font-headline-sm text-secondary text-xl font-normal">365</span>
+          <span class="font-label-caps text-[10px] uppercase tracking-wider text-secondary mt-1">Morning Confessions</span>
+        </div>
+        <div class="p-3 rounded-lg bg-surface-container border border-outline-variant/20 flex flex-col items-center text-center">
+          <span class="font-headline-sm text-tertiary text-xl font-normal">∞</span>
+          <span class="font-label-caps text-[10px] uppercase tracking-wider text-secondary mt-1">Unwritten Tomorrows</span>
+        </div>
+      </div>
+
+      <div class="p-space-md rounded-xl bg-surface-container-lowest/80 border border-secondary/20">
+        <p class="font-title-script italic text-secondary text-base leading-relaxed">
+          “You will always be my favorite adventure, my gentlest peace, and the love I choose forever.”
+        </p>
+        <span class="font-label-caps text-primary uppercase tracking-widest text-[11px] block mt-2 text-right">— Tanish</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PRINTABLE KEEPSAKE FOLIO MODAL
+       ========================================================================== -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8 bg-surface-container-lowest/90 backdrop-blur-2xl opacity-0 pointer-events-none transition-all duration-500" id="keepsakeModal">
+    <div class="relative max-w-2xl w-full bg-surface-container-high rounded-xl overflow-hidden border border-secondary/30 shadow-[0_25px_60px_-15px_rgba(141,38,63,0.6)] p-space-md sm:p-space-xl transform scale-95 transition-transform duration-500">
+      <button class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-surface/80 text-on-surface hover:text-primary flex items-center justify-center transition-colors no-print" id="closeKeepsakeBtn" aria-label="Close keepsake modal">
+        <span class="material-symbols-outlined text-lg">close</span>
+      </button>
+
+      <div class="border-2 border-secondary/30 p-space-md sm:p-space-lg rounded-lg text-center relative bg-surface-container-low/60">
+        <div class="w-14 h-14 mx-auto rounded-full bg-surface-container flex items-center justify-center border border-secondary/40 shadow-md mb-space-sm">
+          <span class="font-title-script text-2xl italic text-primary leading-none">T&T</span>
+        </div>
+
+        <span class="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary block mb-1">Official Commemorative Folio</span>
+        <h3 class="font-display-hero-mobile sm:font-display-hero text-2xl sm:text-4xl text-on-surface tracking-tight mb-2">
+          Certificate of Devoted Love
+        </h3>
+        <p class="font-title-script text-base sm:text-lg italic text-secondary mb-space-md">
+          Solemnly issued on 04.11.2026 to commemorate 365 Days of Devotion
+        </p>
+
+        <p class="font-body-md text-sm sm:text-base text-on-surface-variant font-light max-w-lg mx-auto leading-relaxed mb-space-lg">
+          This document certifies that from this day forth and across every dawn to follow, Tanish and Tanuu remain bound in unconditional laughter, quiet solace, and boundless love.
+        </p>
+
+        <div class="flex items-center justify-around border-t border-secondary/20 pt-space-md">
+          <div class="flex flex-col items-center">
+            <span class="font-title-script text-xl italic text-primary">Tanish</span>
+            <span class="font-label-caps text-[9px] uppercase tracking-widest text-outline mt-0.5">Author of Vows</span>
+          </div>
+          <div class="wax-seal w-12 h-12 rounded-full flex items-center justify-center">
+            <span class="font-title-script text-xs italic text-primary-fixed">T&T</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="font-title-script text-xl italic text-secondary">Tanuu</span>
+            <span class="font-label-caps text-[9px] uppercase tracking-widest text-outline mt-0.5">Devoted Muse</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-space-md flex items-center justify-center gap-space-sm no-print">
+        <button id="printKeepsakeBtn" class="px-space-lg py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest hover:bg-inverse-primary shadow-md flex items-center gap-2">
+          <span class="material-symbols-outlined text-base">print</span>
+          <span>Print / Save Folio PDF</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio, Voice Note, Reel and Main Application Scripts -->
+  <script src="scripts/audio.js"></script>
+  <script src="scripts/voice-player.js"></script>
+  <script src="scripts/reel-player.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
